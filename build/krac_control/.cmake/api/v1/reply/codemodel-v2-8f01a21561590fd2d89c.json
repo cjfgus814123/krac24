@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f266b9362d23af165954.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "krac_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_control_uninstall-959ad6c49aed01a46f7c.json",
+					"name" : "krac_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "offboard::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-offboard-f28dd30a0a6f93aea60e.json",
+					"name" : "offboard",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "precision_lander::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-precision_lander-21b58efbd93963077277.json",
+					"name" : "precision_lander",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-80118ee8e07a33a861d5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vtol_fsm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vtol_fsm-22a5f98786e82bf349b0.json",
+					"name" : "vtol_fsm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vtol_fsm_P::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vtol_fsm_P-b01acce1d816cfeb355a.json",
+					"name" : "vtol_fsm_P",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kch/ros2_ws/build/krac_control",
+		"source" : "/home/kch/ros2_ws/src/krac_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

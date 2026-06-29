@@ -1,0 +1,3 @@
+/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/libvision_msgs_rviz_plugins.so
+/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/vision_msgs_rviz_pluginsExport.cmake
+/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/vision_msgs_rviz_pluginsExport-noconfig.cmake

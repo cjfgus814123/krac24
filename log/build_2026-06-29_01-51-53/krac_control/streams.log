@@ -1,0 +1,42 @@
+[0.028s] Invoking command in '/home/kch/ros2_ws/build/krac_control': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target offboard[0m
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target vtol_fsm_P[0m
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[0.062s] [35m[1mConsolidate compiler generated dependencies of target precision_lander[0m
+[0.076s] [ 50%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[0.076s] [ 62%] Built target offboard
+[0.076s] [ 62%] Built target vtol_fsm_P
+[0.077s] [ 87%] Built target precision_lander
+[1.944s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:[m[K In member function ‘[01m[Kvoid RescueMissionNode::control_loop()[m[K’:
+[1.944s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:265:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_detected[m[K’ was not declared in this scope
+[1.944s]   265 |                 if ([01;31m[Kobject_detected[m[K) {
+[1.944s]       |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.948s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:269:74:[m[K [01;31m[Kerror: [m[K‘[01m[KVISION_P_GAIN[m[K’ was not declared in this scope
+[1.948s]   269 | linear.x = clamp_velocity(-vision_error_.y * [01;31m[KVISION_P_GAIN[m[K);
+[1.948s]       |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[1.948s] 
+[1.953s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:269:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp_velocity[m[K’ was not declared in this scope
+[1.953s]   269 |                     vel_cmd.linear.x = [01;31m[Kclamp_velocity[m[K(-vision_error_.y * VISION_P_GAIN);
+[1.953s]       |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.957s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:274:63:[m[K [01;31m[Kerror: [m[K‘[01m[KDESCEND_SPEED[m[K’ was not declared in this scope
+[1.957s]   274 |    if (dist_pixel < 40.0) vel_cmd.linear.z = [01;31m[KDESCEND_SPEED[m[K;
+[1.957s]       |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[1.957s] 
+[1.962s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:330:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_detected[m[K’ was not declared in this scope
+[1.963s]   330 |                 if ([01;31m[Kobject_detected[m[K) {
+[1.963s]       |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[1.966s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:333:74:[m[K [01;31m[Kerror: [m[K‘[01m[KVISION_P_GAIN[m[K’ was not declared in this scope
+[1.967s]   333 | linear.x = clamp_velocity(-vision_error_.y * [01;31m[KVISION_P_GAIN[m[K);
+[1.967s]       |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[1.967s] 
+[1.971s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:333:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp_velocity[m[K’ was not declared in this scope
+[1.971s]   333 |                     vel_cmd.linear.x = [01;31m[Kclamp_velocity[m[K(-vision_error_.y * VISION_P_GAIN);
+[1.971s]       |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[1.975s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:336:63:[m[K [01;31m[Kerror: [m[K‘[01m[KDESCEND_SPEED[m[K’ was not declared in this scope
+[1.975s]   336 |    if (dist_pixel < 30.0) vel_cmd.linear.z = [01;31m[KDESCEND_SPEED[m[K;
+[1.975s]       |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+[1.975s] 
+[6.398s] gmake[2]: *** [CMakeFiles/vtol_fsm.dir/build.make:76: CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o] Error 1
+[6.398s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/vtol_fsm.dir/all] Error 2
+[6.399s] gmake: *** [Makefile:146: all] Error 2
+[6.401s] Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '2': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16

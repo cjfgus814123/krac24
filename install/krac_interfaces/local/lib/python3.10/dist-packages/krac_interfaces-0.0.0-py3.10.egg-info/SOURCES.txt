@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/krac_interfaces/ament_cmake_python/krac_interfaces/krac_interfaces.egg-info/SOURCES.txt

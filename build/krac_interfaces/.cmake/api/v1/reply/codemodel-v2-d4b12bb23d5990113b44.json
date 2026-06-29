@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b45b4d116139f103d97b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "krac_interfaces__py",
+					"jsonFile" : "directory-krac_interfaces__py-ec3906cad440eef748e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/kch/ros2_ws/build/krac_interfaces/krac_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "krac_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_krac_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_krac_interfaces_egg-ae6cfe1ad31cac71e8da.json",
+					"name" : "ament_cmake_python_build_krac_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_krac_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_krac_interfaces-735daf4738312f59f3a7.json",
+					"name" : "ament_cmake_python_symlink_krac_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces-f06e6781bce9b0e01640.json",
+					"name" : "krac_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__cpp-62fae47b2d4e5adbe2ae.json",
+					"name" : "krac_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "krac_interfaces__py::@3aa07f32c1ffe15008f1",
+					"jsonFile" : "target-krac_interfaces__py-5e55d7c1a3a546a0a23d.json",
+					"name" : "krac_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_generator_c-474f02224bdf954f17b7.json",
+					"name" : "krac_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_generator_py-1076e4e33e8801e2c5ae.json",
+					"name" : "krac_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_c-d2bea72ac59211d295e6.json",
+					"name" : "krac_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_c__pyext-d604b6c9060f14e0dee0.json",
+					"name" : "krac_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_cpp-13a756775ef1d6c98dbe.json",
+					"name" : "krac_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_fastrtps_c-78e286a541553e60993d.json",
+					"name" : "krac_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_fastrtps_c__pyext-0f49fd12e19aa8b8b1b7.json",
+					"name" : "krac_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_fastrtps_cpp-eaf62408bd56f3e5cd2f.json",
+					"name" : "krac_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_introspection_c-db666600ebd69a72a819.json",
+					"name" : "krac_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_introspection_c__pyext-7cd62c7e563d890b4dc6.json",
+					"name" : "krac_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces__rosidl_typesupport_introspection_cpp-f5c089e5d345c9f23f06.json",
+					"name" : "krac_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "krac_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-krac_interfaces_uninstall-358ab04033a6905be67e.json",
+					"name" : "krac_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-4cbd81c77bc3cff8788b.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kch/ros2_ws/build/krac_interfaces",
+		"source" : "/home/kch/ros2_ws/src/krac_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

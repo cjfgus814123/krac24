@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/krac_interfaces/rosidl_typesupport_introspection_c/krac_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h

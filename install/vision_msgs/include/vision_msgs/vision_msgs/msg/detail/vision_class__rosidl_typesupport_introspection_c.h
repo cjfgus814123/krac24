@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/vision_msgs/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/vision_class__rosidl_typesupport_introspection_c.h

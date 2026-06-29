@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/krac_interfaces/rosidl_generator_py/krac_interfaces/msg/_flight_phase_s.c

@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/vision_msgs/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h

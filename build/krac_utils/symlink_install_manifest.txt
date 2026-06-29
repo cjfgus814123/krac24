@@ -1,0 +1,16 @@
+/home/kch/ros2_ws/install/krac_utils/lib/krac_utils/competition_logger
+/home/kch/ros2_ws/install/krac_utils/share/ament_index/resource_index/package_run_dependencies/krac_utils
+/home/kch/ros2_ws/install/krac_utils/share/ament_index/resource_index/parent_prefix_path/krac_utils
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/environment/ament_prefix_path.sh
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/environment/ament_prefix_path.dsv
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/environment/path.sh
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/environment/path.dsv
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/local_setup.bash
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/local_setup.sh
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/local_setup.zsh
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/local_setup.dsv
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.dsv
+/home/kch/ros2_ws/install/krac_utils/share/ament_index/resource_index/packages/krac_utils
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/cmake/krac_utilsConfig.cmake
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/cmake/krac_utilsConfig-version.cmake
+/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.xml

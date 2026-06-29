@@ -1,0 +1,28 @@
+[0.443s] Invoking command in '/home/kch/ros2_ws/build/krac_vision': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kch/ros2_ws/build/krac_vision/build --no-deps symlink_data
+[0.603s] running develop
+[0.712s] running egg_info
+[0.712s] creating krac_vision.egg-info
+[0.712s] writing krac_vision.egg-info/PKG-INFO
+[0.712s] writing dependency_links to krac_vision.egg-info/dependency_links.txt
+[0.712s] writing entry points to krac_vision.egg-info/entry_points.txt
+[0.712s] writing requirements to krac_vision.egg-info/requires.txt
+[0.712s] writing top-level names to krac_vision.egg-info/top_level.txt
+[0.712s] writing manifest file 'krac_vision.egg-info/SOURCES.txt'
+[0.714s] reading manifest file 'krac_vision.egg-info/SOURCES.txt'
+[0.714s] writing manifest file 'krac_vision.egg-info/SOURCES.txt'
+[0.715s] running build_ext
+[0.715s] Creating /home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages/krac-vision.egg-link (link to .)
+[0.716s] Installing yolo_node script to /home/kch/ros2_ws/install/krac_vision/lib/krac_vision
+[0.716s] 
+[0.716s] Installed /home/kch/ros2_ws/build/krac_vision
+[0.716s] running symlink_data
+[0.716s] creating /home/kch/ros2_ws/install/krac_vision/share/ament_index
+[0.716s] creating /home/kch/ros2_ws/install/krac_vision/share/ament_index/resource_index
+[0.716s] creating /home/kch/ros2_ws/install/krac_vision/share/ament_index/resource_index/packages
+[0.716s] symbolically linking /home/kch/ros2_ws/build/krac_vision/resource/krac_vision -> /home/kch/ros2_ws/install/krac_vision/share/ament_index/resource_index/packages
+[0.716s] symbolically linking /home/kch/ros2_ws/build/krac_vision/package.xml -> /home/kch/ros2_ws/install/krac_vision/share/krac_vision
+[0.716s] creating /home/kch/ros2_ws/install/krac_vision/share/krac_vision/weights
+[0.716s] symbolically linking /home/kch/ros2_ws/build/krac_vision/weights/best.pt -> /home/kch/ros2_ws/install/krac_vision/share/krac_vision/weights
+[0.716s] creating /home/kch/ros2_ws/install/krac_vision/share/krac_vision/launch
+[0.716s] symbolically linking /home/kch/ros2_ws/build/krac_vision/launch/yolo_detector.launch.py -> /home/kch/ros2_ws/install/krac_vision/share/krac_vision/launch
+[0.753s] Invoked command in '/home/kch/ros2_ws/build/krac_vision' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kch/ros2_ws/build/krac_vision/build --no-deps symlink_data

@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[ 25%] Built target vtol_fsm_P
+[ 50%] Built target precision_lander
+[ 87%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[ 87%] Built target offboard
+[100%] [32m[1mLinking CXX executable vtol_fsm[0m
+[100%] Built target vtol_fsm
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm_P
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/offboard
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/precision_lander

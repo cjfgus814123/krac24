@@ -1,0 +1,4 @@
+source;share/krac_utils/local_setup.bash
+source;share/krac_utils/local_setup.dsv
+source;share/krac_utils/local_setup.sh
+source;share/krac_utils/local_setup.zsh

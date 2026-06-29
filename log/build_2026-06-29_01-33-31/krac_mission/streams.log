@@ -1,0 +1,66 @@
+[0.021s] Invoking command in '/home/kch/ros2_ws/build/krac_mission': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/kch/ros2_ws/src/krac_mission -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kch/ros2_ws/install/krac_mission
+[0.079s] -- The C compiler identification is GNU 11.4.0
+[0.119s] -- The CXX compiler identification is GNU 11.4.0
+[0.124s] -- Detecting C compiler ABI info
+[0.179s] -- Detecting C compiler ABI info - done
+[0.184s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.184s] -- Detecting C compile features
+[0.184s] -- Detecting C compile features - done
+[0.186s] -- Detecting CXX compiler ABI info
+[0.247s] -- Detecting CXX compiler ABI info - done
+[0.252s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.252s] -- Detecting CXX compile features
+[0.252s] -- Detecting CXX compile features - done
+[0.254s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.365s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.415s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.439s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.472s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.475s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.481s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.489s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.499s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.527s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.529s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.600s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.626s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.669s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.675s] -- Looking for pthread.h
+[0.733s] -- Looking for pthread.h - found
+[0.733s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.791s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.792s] -- Found Threads: TRUE  
+[0.825s] -- Found mavros_msgs: 2.14.0 (/opt/ros/humble/share/mavros_msgs/cmake)
+[0.878s] -- Found krac_interfaces: 0.0.0 (/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/cmake)
+[0.952s] -- Configuring done
+[0.955s] -- Generating done
+[0.957s] -- Build files have been written to: /home/kch/ros2_ws/build/krac_mission
+[0.966s] Invoked command in '/home/kch/ros2_ws/build/krac_mission' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake /home/kch/ros2_ws/src/krac_mission -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kch/ros2_ws/install/krac_mission
+[0.967s] Invoking command in '/home/kch/ros2_ws/build/krac_mission': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_mission -- -j16 -l16
+[1.001s] Invoked command in '/home/kch/ros2_ws/build/krac_mission' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_mission -- -j16 -l16
+[1.002s] Invoking command in '/home/kch/ros2_ws/build/krac_mission': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_mission
+[1.008s] -- Install configuration: ""
+[1.008s] -- Execute custom install script
+[1.009s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/krac_24_sitl.launch.py
+[1.017s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/main_mission.launch.py
+[1.025s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/sitl_vtol.launch.py
+[1.033s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/sitl_x500.launch.py
+[1.043s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/config/mavros_params.yaml
+[1.051s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/config/vtol_params.yaml
+[1.059s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/config/waypoints.yaml
+[1.068s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/ament_index/resource_index/package_run_dependencies/krac_mission
+[1.076s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/ament_index/resource_index/parent_prefix_path/krac_mission
+[1.084s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/ament_prefix_path.sh
+[1.093s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/ament_prefix_path.dsv
+[1.101s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/path.sh
+[1.108s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/path.dsv
+[1.116s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.bash
+[1.123s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.sh
+[1.130s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.zsh
+[1.139s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.dsv
+[1.147s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.dsv
+[1.156s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/ament_index/resource_index/packages/krac_mission
+[1.166s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/cmake/krac_missionConfig.cmake
+[1.176s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/cmake/krac_missionConfig-version.cmake
+[1.187s] -- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.xml
+[1.200s] Invoked command in '/home/kch/ros2_ws/build/krac_mission' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/yolo_bringup:/home/kch/ros2_ws/install/yolo_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/yolo_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_mission

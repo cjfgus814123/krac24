@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/vision_msgs/rosidl_generator_cpp/vision_msgs/msg/detail/point2_d__traits.hpp

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/kch/ros2_ws/build/krac_interfaces/rosidl_generator_py/krac_interfaces/krac_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "krac_interfaces__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/krac_interfaces")

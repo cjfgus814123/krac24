@@ -1,0 +1,3 @@
+[console_scripts]
+yolo_node = krac_vision.vision_tracker:main
+

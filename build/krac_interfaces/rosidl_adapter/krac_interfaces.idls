@@ -1,0 +1,3 @@
+/home/kch/ros2_ws/build/krac_interfaces/rosidl_adapter/krac_interfaces:msg/FlightPhase.idl
+/home/kch/ros2_ws/build/krac_interfaces/rosidl_adapter/krac_interfaces:msg/TargetInfo.idl
+/home/kch/ros2_ws/build/krac_interfaces/rosidl_adapter/krac_interfaces:msg/TargetError.idl

@@ -1,0 +1,21 @@
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[ 25%] Built target vtol_fsm_P
+[ 50%] Built target precision_lander
+[ 87%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[ 87%] Built target offboard
+[100%] [32m[1mLinking CXX executable vtol_fsm[0m
+[100%] Built target vtol_fsm
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm_P
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/offboard
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/precision_lander
+[31mCMake Error at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:204 (message):
+  ament_cmake_symlink_install_programs() can't find
+  '/home/kch/ros2_ws/src/krac_control/src/mission_loader.py'
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_programs)
+  cmake_install.cmake:46 (include)
+
+[0m

@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/vision_msgs/rosidl_generator_py/vision_msgs/msg/_vision_info.py

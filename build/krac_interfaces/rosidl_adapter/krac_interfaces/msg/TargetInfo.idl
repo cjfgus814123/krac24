@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from krac_interfaces/msg/TargetInfo.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module krac_interfaces {
+  module msg {
+    struct TargetInfo {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "인식 성공 여부")
+      boolean detected;
+
+      @verbatim (language="comment", text=
+        "\"survivor\" or \"marker_v\"")
+      string target_type;
+
+      @verbatim (language="comment", text=
+        "영상 내 X 좌표 (-1.0 ~ 1.0)")
+      float image_x;
+
+      @verbatim (language="comment", text=
+        "영상 내 Y 좌표 (-1.0 ~ 1.0)")
+      float image_y;
+
+      @verbatim (language="comment", text=
+        "타겟까지의 거리 (m)")
+      float distance;
+
+      @verbatim (language="comment", text=
+        "3차원 좌표 (상대 좌표)")
+      sequence<float> location_xyz;
+    };
+  };
+};

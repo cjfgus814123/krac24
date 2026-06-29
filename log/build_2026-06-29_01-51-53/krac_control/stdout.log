@@ -1,0 +1,8 @@
+[35m[1mConsolidate compiler generated dependencies of target offboard[0m
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm_P[0m
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[35m[1mConsolidate compiler generated dependencies of target precision_lander[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[ 62%] Built target offboard
+[ 62%] Built target vtol_fsm_P
+[ 87%] Built target precision_lander

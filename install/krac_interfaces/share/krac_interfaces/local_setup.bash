@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/krac_interfaces/ament_cmake_environment_hooks/local_setup.bash

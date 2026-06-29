@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/vision_msgs/rosidl_generator_c/vision_msgs/msg/detail/label_info__type_support.h

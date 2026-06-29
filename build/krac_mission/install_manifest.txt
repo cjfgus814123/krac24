@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/install/krac_mission/lib/krac_mission/mission_loader

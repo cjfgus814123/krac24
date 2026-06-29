@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/vision_msgs/rosidl_generator_py/vision_msgs/msg/_bounding_box2_d_array_s.c

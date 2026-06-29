@@ -1,0 +1,624 @@
+[0.008s] Invoking command in '/home/kch/ros2_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake /home/kch/ros2_ws/vision_msgs/vision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kch/ros2_ws/install/vision_msgs
+[0.045s] -- The C compiler identification is GNU 11.4.0
+[0.084s] -- The CXX compiler identification is GNU 11.4.0
+[0.089s] -- Detecting C compiler ABI info
+[0.140s] -- Detecting C compiler ABI info - done
+[0.144s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.144s] -- Detecting C compile features
+[0.144s] -- Detecting C compile features - done
+[0.146s] -- Detecting CXX compiler ABI info
+[0.207s] -- Detecting CXX compiler ABI info - done
+[0.211s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.211s] -- Detecting CXX compile features
+[0.212s] -- Detecting CXX compile features - done
+[0.213s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.311s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.352s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.367s] -- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+[0.388s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.390s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.395s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.402s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.411s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.426s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.433s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.688s] -- Found ament_cmake_cppcheck: 0.12.14 (/opt/ros/humble/share/ament_cmake_cppcheck/cmake)
+[0.689s] -- Found ament_cmake_cpplint: 0.12.14 (/opt/ros/humble/share/ament_cmake_cpplint/cmake)
+[0.691s] -- Found ament_cmake_uncrustify: 0.12.14 (/opt/ros/humble/share/ament_cmake_uncrustify/cmake)
+[0.692s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.979s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.091s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.107s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.108s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.129s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.129s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.129s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.129s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.144s] -- Found PythonExtra: .so  
+[1.188s] -- Found ament_cmake_flake8: 0.12.14 (/opt/ros/humble/share/ament_cmake_flake8/cmake)
+[1.189s] -- Found ament_cmake_pep257: 0.12.14 (/opt/ros/humble/share/ament_cmake_pep257/cmake)
+[1.193s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.198s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[1.200s] -- Looking for pthread.h
+[1.259s] -- Looking for pthread.h - found
+[1.259s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.323s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.324s] -- Found Threads: TRUE  
+[1.330s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.330s] -- Configured cppcheck include dirs: /home/kch/ros2_ws/vision_msgs/vision_msgs/include
+[1.330s] -- Configured cppcheck exclude dirs and/or files: 
+[1.331s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.331s] -- Configured cpplint exclude dirs and/or files: 
+[1.332s] -- Added test 'uncrustify' to check C / C++ code style
+[1.332s] -- Configured uncrustify additional arguments: 
+[1.332s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.333s] -- Added test 'lint_cmake' to check CMake code style
+[1.333s] -- Added test 'xmllint' to check XML markup files
+[1.337s] -- Configuring done
+[1.376s] -- Generating done
+[1.387s] -- Build files have been written to: /home/kch/ros2_ws/build/vision_msgs
+[1.400s] Invoked command in '/home/kch/ros2_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake /home/kch/ros2_ws/vision_msgs/vision_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kch/ros2_ws/install/vision_msgs
+[1.400s] Invoking command in '/home/kch/ros2_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs -- -j16 -l16
+[1.446s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[1.452s] [  1%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.453s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[1.455s] [  2%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.461s] [  2%] Built target ament_cmake_python_symlink_vision_msgs
+[1.636s] running egg_info
+[1.636s] creating vision_msgs.egg-info
+[1.636s] writing vision_msgs.egg-info/PKG-INFO
+[1.636s] writing dependency_links to vision_msgs.egg-info/dependency_links.txt
+[1.636s] writing top-level names to vision_msgs.egg-info/top_level.txt
+[1.636s] writing manifest file 'vision_msgs.egg-info/SOURCES.txt'
+[1.638s] reading manifest file 'vision_msgs.egg-info/SOURCES.txt'
+[1.638s] writing manifest file 'vision_msgs.egg-info/SOURCES.txt'
+[1.665s] [  2%] Built target ament_cmake_python_build_vision_msgs_egg
+[2.059s] [  3%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[2.196s] [  3%] Built target gtest_main
+[2.559s] [  6%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/bounding_box2_d__functions.c.o[0m
+[2.559s] [  6%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/detection3_d_array__functions.c.o[0m
+[2.559s] [  6%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/bounding_box3_d__functions.c.o[0m
+[2.559s] [  6%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/classification__functions.c.o[0m
+[2.559s] [  6%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/label_info__functions.c.o[0m
+[2.559s] [  7%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/bounding_box3_d_array__functions.c.o[0m
+[2.559s] [  7%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/bounding_box2_d_array__functions.c.o[0m
+[2.559s] [  8%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/object_hypothesis__functions.c.o[0m
+[2.560s] [  9%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/detection3_d__functions.c.o[0m
+[2.560s] [  9%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/detection2_d__functions.c.o[0m
+[2.560s] [ 10%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/detection2_d_array__functions.c.o[0m
+[2.560s] [ 11%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/object_hypothesis_with_pose__functions.c.o[0m
+[2.562s] [ 11%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/vision_class__functions.c.o[0m
+[2.563s] [ 12%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/point2_d__functions.c.o[0m
+[2.604s] [ 13%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/vision_info__functions.c.o[0m
+[2.604s] [ 13%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_c.dir/rosidl_generator_c/vision_msgs/msg/detail/pose2_d__functions.c.o[0m
+[2.641s] [ 14%] [32m[1mLinking C shared library libvision_msgs__rosidl_generator_c.so[0m
+[2.683s] [ 14%] Built target vision_msgs__rosidl_generator_c
+[2.691s] [ 14%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.691s] [ 14%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.691s] [ 15%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.691s] [ 15%] Built target vision_msgs__cpp
+[2.700s] [ 16%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.700s] [ 16%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.700s] [ 16%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.328s] [ 17%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/bounding_box2_d__type_support.cpp.o[0m
+[3.329s] [ 18%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/detection2_d__type_support.cpp.o[0m
+[3.329s] [ 18%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/bounding_box3_d__type_support.cpp.o[0m
+[3.333s] [ 19%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/bounding_box3_d_array__type_support.cpp.o[0m
+[3.337s] [ 20%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/bounding_box2_d_array__type_support.cpp.o[0m
+[3.337s] [ 20%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/classification__type_support.cpp.o[0m
+[3.337s] [ 21%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/detection2_d_array__type_support.cpp.o[0m
+[3.337s] [ 21%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/detection3_d_array__type_support.cpp.o[0m
+[3.340s] [ 22%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/label_info__type_support.cpp.o[0m
+[3.344s] [ 23%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/detection3_d__type_support.cpp.o[0m
+[3.384s] [ 23%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/object_hypothesis__type_support.cpp.o[0m
+[3.384s] [ 23%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/point2_d__type_support.cpp.o[0m
+[3.384s] [ 24%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/object_hypothesis_with_pose__type_support.cpp.o[0m
+[3.387s] [ 25%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/vision_class__type_support.cpp.o[0m
+[3.389s] [ 26%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/pose2_d__type_support.cpp.o[0m
+[3.393s] [ 26%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/vision_msgs/msg/vision_info__type_support.cpp.o[0m
+[3.436s] [ 27%] [32m[1mLinking CXX shared library libvision_msgs__rosidl_typesupport_c.so[0m
+[3.490s] [ 27%] Built target vision_msgs__rosidl_typesupport_c
+[3.546s] [ 27%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/bounding_box3_d__type_support_c.cpp.o[0m
+[3.550s] [ 28%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/bounding_box2_d_array__type_support_c.cpp.o[0m
+[3.550s] [ 29%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/bounding_box3_d_array__type_support_c.cpp.o[0m
+[3.550s] [ 30%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/bounding_box2_d__type_support_c.cpp.o[0m
+[3.555s] [ 31%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/classification__type_support_c.cpp.o[0m
+[3.557s] [ 31%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/detection2_d_array__type_support_c.cpp.o[0m
+[3.574s] [ 31%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/detection3_d__type_support_c.cpp.o[0m
+[3.581s] [ 33%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/detection2_d__type_support_c.cpp.o[0m
+[3.581s] [ 33%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/label_info__type_support_c.cpp.o[0m
+[3.581s] [ 34%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/detection3_d_array__type_support_c.cpp.o[0m
+[3.583s] [ 34%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/object_hypothesis__type_support_c.cpp.o[0m
+[3.628s] [ 35%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/bounding_box2_d__type_support.cpp.o[0m
+[3.884s] [ 36%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/bounding_box2_d_array__type_support.cpp.o[0m
+[3.892s] [ 36%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/bounding_box3_d__type_support.cpp.o[0m
+[3.896s] [ 37%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support_c.cpp.o[0m
+[3.922s] [ 38%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/vision_class__type_support_c.cpp.o[0m
+[3.923s] [ 39%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/bounding_box3_d_array__type_support.cpp.o[0m
+[3.945s] [ 40%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/classification__type_support.cpp.o[0m
+[3.958s] [ 41%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/bounding_box2_d__type_support.cpp.o[0m
+[3.965s] [ 41%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/detection2_d_array__type_support.cpp.o[0m
+[3.986s] [ 41%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/point2_d__type_support_c.cpp.o[0m
+[3.988s] [ 41%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/bounding_box2_d_array__type_support.cpp.o[0m
+[4.001s] [ 42%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/pose2_d__type_support_c.cpp.o[0m
+[4.029s] [ 43%] [32m[1mLinking CXX static library libgtest.a[0m
+[4.054s] [ 44%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/bounding_box3_d__type_support.cpp.o[0m
+[4.170s] [ 45%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/bounding_box3_d_array__type_support.cpp.o[0m
+[4.202s] [ 45%] Built target gtest
+[4.232s] [ 46%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/vision_msgs/msg/detail/vision_info__type_support_c.cpp.o[0m
+[4.263s] [ 47%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/detection2_d__type_support.cpp.o[0m
+[4.267s] [ 47%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/classification__type_support.cpp.o[0m
+[4.268s] [ 47%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/detection3_d_array__type_support.cpp.o[0m
+[4.306s] [ 48%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/detection3_d__type_support.cpp.o[0m
+[4.308s] [ 48%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/bounding_box2_d__type_support.c.o[0m
+[4.314s] [ 49%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/bounding_box2_d_array__type_support.c.o[0m
+[4.347s] [ 50%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/bounding_box3_d__type_support.c.o[0m
+[4.369s] [ 51%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/detection2_d_array__type_support.cpp.o[0m
+[4.375s] [ 51%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/detection2_d__type_support.cpp.o[0m
+[4.386s] [ 51%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/bounding_box3_d_array__type_support.c.o[0m
+[4.399s] [ 52%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/detection3_d_array__type_support.cpp.o[0m
+[4.403s] [ 53%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/label_info__type_support.cpp.o[0m
+[4.404s] [ 53%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/object_hypothesis__type_support.cpp.o[0m
+[4.424s] [ 54%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/detection3_d__type_support.cpp.o[0m
+[4.432s] [ 55%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/bounding_box2_d__type_support.cpp.o[0m
+[4.436s] [ 56%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.cpp.o[0m
+[4.450s] [ 57%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/classification__type_support.c.o[0m
+[4.477s] [ 57%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/bounding_box2_d_array__type_support.cpp.o[0m
+[4.504s] [ 58%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/bounding_box3_d__type_support.cpp.o[0m
+[4.534s] [ 58%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/detection2_d_array__type_support.c.o[0m
+[4.546s] [ 59%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/bounding_box3_d_array__type_support.cpp.o[0m
+[4.623s] [ 59%] [32m[1mLinking CXX shared library libvision_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[4.628s] [ 60%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/detection2_d__type_support.c.o[0m
+[4.648s] [ 60%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/classification__type_support.cpp.o[0m
+[4.661s] [ 61%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/vision_class__type_support.cpp.o[0m
+[4.680s] [ 62%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/detection3_d_array__type_support.c.o[0m
+[4.701s] [ 62%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/label_info__type_support.cpp.o[0m
+[4.708s] [ 63%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/detection2_d__type_support.cpp.o[0m
+[4.712s] [ 64%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/detection2_d_array__type_support.cpp.o[0m
+[4.737s] [ 64%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/detection3_d__type_support.c.o[0m
+[4.799s] [ 64%] Built target vision_msgs__rosidl_typesupport_fastrtps_c
+[4.805s] [ 64%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/detection3_d_array__type_support.cpp.o[0m
+[4.817s] [ 64%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/point2_d__type_support.cpp.o[0m
+[4.832s] [ 65%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/label_info__type_support.c.o[0m
+[4.848s] [ 66%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/object_hypothesis__type_support.cpp.o[0m
+[4.864s] [ 67%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/pose2_d__type_support.cpp.o[0m
+[4.873s] [ 68%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/vision_msgs/msg/detail/vision_info__type_support.cpp.o[0m
+[4.881s] [ 69%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/object_hypothesis__type_support.c.o[0m
+[4.903s] [ 70%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/object_hypothesis_with_pose__type_support.cpp.o[0m
+[4.917s] [ 70%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/vision_class__type_support.cpp.o[0m
+[4.946s] [ 70%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.c.o[0m
+[4.975s] [ 71%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/vision_class__type_support.c.o[0m
+[5.015s] [ 72%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/point2_d__type_support.cpp.o[0m
+[5.017s] [ 73%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/detection3_d__type_support.cpp.o[0m
+[5.039s] [ 74%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/point2_d__type_support.c.o[0m
+[5.049s] [ 75%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/pose2_d__type_support.c.o[0m
+[5.050s] [ 75%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/pose2_d__type_support.cpp.o[0m
+[5.120s] [ 75%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/vision_msgs/msg/vision_info__type_support.cpp.o[0m
+[5.124s] [ 76%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/vision_msgs/msg/detail/vision_info__type_support.c.o[0m
+[5.183s] [ 76%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/object_hypothesis__type_support.cpp.o[0m
+[5.184s] [ 77%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/label_info__type_support.cpp.o[0m
+[5.188s] [ 78%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/object_hypothesis_with_pose__type_support.cpp.o[0m
+[5.194s] [ 78%] [32m[1mLinking C shared library libvision_msgs__rosidl_typesupport_introspection_c.so[0m
+[5.211s] [ 78%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/vision_class__type_support.cpp.o[0m
+[5.235s] [ 79%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/point2_d__type_support.cpp.o[0m
+[5.255s] [ 80%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/pose2_d__type_support.cpp.o[0m
+[5.274s] [ 80%] Built target vision_msgs__rosidl_typesupport_introspection_c
+[5.280s] [ 80%] [32mBuilding CXX object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/vision_msgs/msg/detail/dds_fastrtps/vision_info__type_support.cpp.o[0m
+[5.315s] [ 80%] [32m[1mLinking CXX shared library libvision_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[5.415s] [ 81%] [32m[1mLinking CXX shared library libvision_msgs__rosidl_typesupport_cpp.so[0m
+[5.420s] [ 81%] Built target vision_msgs__rosidl_typesupport_introspection_cpp
+[5.468s] [ 81%] Built target vision_msgs__rosidl_typesupport_cpp
+[5.651s] [ 82%] [32m[1mLinking CXX shared library libvision_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.719s] [ 82%] Built target vision_msgs__rosidl_typesupport_fastrtps_cpp
+[5.739s] [ 82%] Built target vision_msgs
+[5.758s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.758s] [ 83%] [32mBuilding CXX object CMakeFiles/vision_msgs_test.dir/test/main.cpp.o[0m
+[6.291s] [ 84%] [32m[1mLinking CXX executable vision_msgs_test[0m
+[6.401s] [ 84%] Built target vision_msgs_test
+[7.222s] [ 84%] Built target vision_msgs__py
+[7.251s] [ 86%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_bounding_box3_d_s.c.o[0m
+[7.251s] [ 86%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_bounding_box2_d_array_s.c.o[0m
+[7.251s] [ 87%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_detection3_d_array_s.c.o[0m
+[7.251s] [ 88%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_detection2_d_array_s.c.o[0m
+[7.251s] [ 88%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_bounding_box2_d_s.c.o[0m
+[7.251s] [ 88%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_bounding_box3_d_array_s.c.o[0m
+[7.251s] [ 88%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_detection2_d_s.c.o[0m
+[7.251s] [ 89%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_classification_s.c.o[0m
+[7.251s] [ 89%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_label_info_s.c.o[0m
+[7.251s] [ 90%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_object_hypothesis_s.c.o[0m
+[7.252s] [ 91%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_object_hypothesis_with_pose_s.c.o[0m
+[7.252s] [ 91%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_detection3_d_s.c.o[0m
+[7.259s] [ 92%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_vision_class_s.c.o[0m
+[7.259s] [ 93%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_point2_d_s.c.o[0m
+[7.259s] [ 93%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_pose2_d_s.c.o[0m
+[7.261s] [ 94%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_generator_py.dir/rosidl_generator_py/vision_msgs/msg/_vision_info_s.c.o[0m
+[7.432s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/vision_msgs/libvision_msgs__rosidl_generator_py.so[0m
+[7.472s] [ 95%] Built target vision_msgs__rosidl_generator_py
+[7.490s] [ 96%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/vision_msgs/_vision_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[7.491s] [ 97%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/vision_msgs/_vision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[7.492s] [ 98%] [32mBuilding C object CMakeFiles/vision_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/vision_msgs/_vision_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[7.621s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/vision_msgs/vision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.622s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/vision_msgs/vision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.637s] [100%] [32m[1mLinking C shared library rosidl_generator_py/vision_msgs/vision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[7.660s] [100%] Built target vision_msgs__rosidl_typesupport_fastrtps_c__pyext
+[7.668s] [100%] Built target vision_msgs__rosidl_typesupport_c__pyext
+[7.675s] [100%] Built target vision_msgs__rosidl_typesupport_introspection_c__pyext
+[7.687s] Invoked command in '/home/kch/ros2_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs -- -j16 -l16
+[7.689s] Invoking command in '/home/kch/ros2_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs
+[7.696s] -- Install configuration: ""
+[7.696s] -- Execute custom install script
+[7.697s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/ament_index/resource_index/rosidl_interfaces/vision_msgs
+[7.705s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box2_d.h
+[7.713s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box2_d_array.h
+[7.721s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box3_d.h
+[7.729s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box3_d_array.h
+[7.738s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/classification.h
+[7.747s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__functions.h
+[7.756s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__struct.h
+[7.764s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__type_support.h
+[7.772s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__functions.h
+[7.781s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__struct.h
+[7.790s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__type_support.h
+[7.798s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__functions.h
+[7.806s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__struct.h
+[7.815s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__type_support.h
+[7.823s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__functions.h
+[7.832s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__struct.h
+[7.840s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__type_support.h
+[7.849s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__functions.h
+[7.857s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__struct.h
+[7.866s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__type_support.h
+[7.874s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__functions.h
+[7.883s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__struct.h
+[7.891s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__type_support.h
+[7.899s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__functions.h
+[7.908s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__struct.h
+[7.916s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__type_support.h
+[7.924s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__functions.h
+[7.932s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__struct.h
+[7.943s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__type_support.h
+[7.951s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__functions.h
+[7.959s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__struct.h
+[7.968s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__type_support.h
+[7.977s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__functions.h
+[7.985s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__struct.h
+[7.993s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__type_support.h
+[8.002s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__functions.h
+[8.010s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__struct.h
+[8.019s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__type_support.h
+[8.027s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__functions.h
+[8.036s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.h
+[8.046s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.h
+[8.055s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__functions.h
+[8.064s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__struct.h
+[8.073s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__type_support.h
+[8.081s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__functions.h
+[8.090s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__struct.h
+[8.099s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__type_support.h
+[8.107s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__functions.h
+[8.116s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__struct.h
+[8.124s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__type_support.h
+[8.133s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__functions.h
+[8.143s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__struct.h
+[8.152s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__type_support.h
+[8.161s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection2_d.h
+[8.170s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection2_d_array.h
+[8.179s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection3_d.h
+[8.187s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection3_d_array.h
+[8.196s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/label_info.h
+[8.204s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/object_hypothesis.h
+[8.213s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/object_hypothesis_with_pose.h
+[8.222s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/point2_d.h
+[8.230s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/pose2_d.h
+[8.240s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.250s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/vision_class.h
+[8.258s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/vision_info.h
+[8.267s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/library_path.sh
+[8.276s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/library_path.dsv
+[8.285s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_c.h
+[8.293s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__rosidl_typesupport_fastrtps_c.h
+[8.302s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_c.h
+[8.311s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__rosidl_typesupport_fastrtps_c.h
+[8.319s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__rosidl_typesupport_fastrtps_c.h
+[8.327s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__rosidl_typesupport_fastrtps_c.h
+[8.335s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__rosidl_typesupport_fastrtps_c.h
+[8.345s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_fastrtps_c.h
+[8.353s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_fastrtps_c.h
+[8.362s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__rosidl_typesupport_fastrtps_c.h
+[8.370s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_fastrtps_c.h
+[8.379s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_fastrtps_c.h
+[8.388s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_c.h
+[8.396s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_c.h
+[8.405s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__rosidl_typesupport_fastrtps_c.h
+[8.413s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__rosidl_typesupport_fastrtps_c.h
+[8.422s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.430s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box2_d.hpp
+[8.440s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box2_d_array.hpp
+[8.448s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box3_d.hpp
+[8.456s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/bounding_box3_d_array.hpp
+[8.464s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/classification.hpp
+[8.472s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__builder.hpp
+[8.480s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__struct.hpp
+[8.488s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__traits.hpp
+[8.496s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__type_support.hpp
+[8.504s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__builder.hpp
+[8.512s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__struct.hpp
+[8.520s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__traits.hpp
+[8.528s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__type_support.hpp
+[8.536s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__builder.hpp
+[8.546s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__struct.hpp
+[8.554s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__traits.hpp
+[8.562s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__type_support.hpp
+[8.569s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__builder.hpp
+[8.577s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__struct.hpp
+[8.585s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__traits.hpp
+[8.593s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__type_support.hpp
+[8.601s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__builder.hpp
+[8.609s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__struct.hpp
+[8.616s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__traits.hpp
+[8.624s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__type_support.hpp
+[8.632s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__builder.hpp
+[8.641s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__struct.hpp
+[8.649s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__traits.hpp
+[8.657s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__type_support.hpp
+[8.665s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__builder.hpp
+[8.673s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__struct.hpp
+[8.681s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__traits.hpp
+[8.688s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__type_support.hpp
+[8.697s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__builder.hpp
+[8.705s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__struct.hpp
+[8.713s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__traits.hpp
+[8.721s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__type_support.hpp
+[8.729s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__builder.hpp
+[8.737s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__struct.hpp
+[8.747s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__traits.hpp
+[8.755s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__type_support.hpp
+[8.763s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__builder.hpp
+[8.771s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__struct.hpp
+[8.779s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__traits.hpp
+[8.787s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__type_support.hpp
+[8.795s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__builder.hpp
+[8.804s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__struct.hpp
+[8.812s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__traits.hpp
+[8.820s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__type_support.hpp
+[8.828s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__builder.hpp
+[8.836s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp
+[8.845s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__traits.hpp
+[8.853s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__type_support.hpp
+[8.861s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__builder.hpp
+[8.869s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__struct.hpp
+[8.878s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__traits.hpp
+[8.886s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__type_support.hpp
+[8.894s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__builder.hpp
+[8.902s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__struct.hpp
+[8.910s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__traits.hpp
+[8.918s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__type_support.hpp
+[8.927s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__builder.hpp
+[8.935s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__struct.hpp
+[8.945s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__traits.hpp
+[8.953s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__type_support.hpp
+[8.962s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__builder.hpp
+[8.970s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__struct.hpp
+[8.979s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__traits.hpp
+[8.987s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__type_support.hpp
+[8.996s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection2_d.hpp
+[9.005s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection2_d_array.hpp
+[9.013s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection3_d.hpp
+[9.022s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detection3_d_array.hpp
+[9.031s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/label_info.hpp
+[9.041s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/object_hypothesis.hpp
+[9.049s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/object_hypothesis_with_pose.hpp
+[9.057s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/point2_d.hpp
+[9.066s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/pose2_d.hpp
+[9.074s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[9.082s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/vision_class.hpp
+[9.090s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/vision_info.hpp
+[9.099s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[9.108s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[9.116s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[9.125s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[9.133s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__rosidl_typesupport_fastrtps_cpp.hpp
+[9.143s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[9.151s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[9.159s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[9.167s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[9.175s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__rosidl_typesupport_fastrtps_cpp.hpp
+[9.184s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_fastrtps_cpp.hpp
+[9.192s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_fastrtps_cpp.hpp
+[9.201s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[9.209s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__rosidl_typesupport_fastrtps_cpp.hpp
+[9.217s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__rosidl_typesupport_fastrtps_cpp.hpp
+[9.225s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__rosidl_typesupport_fastrtps_cpp.hpp
+[9.234s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.244s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_c.h
+[9.252s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__rosidl_typesupport_introspection_c.h
+[9.261s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_c.h
+[9.269s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__rosidl_typesupport_introspection_c.h
+[9.278s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__rosidl_typesupport_introspection_c.h
+[9.286s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__rosidl_typesupport_introspection_c.h
+[9.294s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__rosidl_typesupport_introspection_c.h
+[9.302s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_introspection_c.h
+[9.311s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_introspection_c.h
+[9.319s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__rosidl_typesupport_introspection_c.h
+[9.327s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_introspection_c.h
+[9.336s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_introspection_c.h
+[9.346s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_c.h
+[9.354s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_c.h
+[9.362s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__rosidl_typesupport_introspection_c.h
+[9.370s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__rosidl_typesupport_introspection_c.h
+[9.379s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.388s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d__rosidl_typesupport_introspection_cpp.hpp
+[9.396s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box2_d_array__rosidl_typesupport_introspection_cpp.hpp
+[9.404s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d__rosidl_typesupport_introspection_cpp.hpp
+[9.412s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/bounding_box3_d_array__rosidl_typesupport_introspection_cpp.hpp
+[9.420s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/classification__rosidl_typesupport_introspection_cpp.hpp
+[9.429s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d__rosidl_typesupport_introspection_cpp.hpp
+[9.437s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__rosidl_typesupport_introspection_cpp.hpp
+[9.446s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d__rosidl_typesupport_introspection_cpp.hpp
+[9.454s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/detection3_d_array__rosidl_typesupport_introspection_cpp.hpp
+[9.462s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/label_info__rosidl_typesupport_introspection_cpp.hpp
+[9.471s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis__rosidl_typesupport_introspection_cpp.hpp
+[9.479s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__rosidl_typesupport_introspection_cpp.hpp
+[9.487s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/point2_d__rosidl_typesupport_introspection_cpp.hpp
+[9.496s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/pose2_d__rosidl_typesupport_introspection_cpp.hpp
+[9.504s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_class__rosidl_typesupport_introspection_cpp.hpp
+[9.512s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/vision_msgs/msg/detail/vision_info__rosidl_typesupport_introspection_cpp.hpp
+[9.520s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/pythonpath.sh
+[9.529s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/pythonpath.dsv
+[9.537s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs-4.1.1-py3.10.egg-info/PKG-INFO
+[9.547s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs-4.1.1-py3.10.egg-info/SOURCES.txt
+[9.555s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs-4.1.1-py3.10.egg-info/dependency_links.txt
+[9.564s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs-4.1.1-py3.10.egg-info/top_level.txt
+[9.572s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/__init__.py
+[9.581s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/_vision_msgs_s.ep.rosidl_typesupport_c.c
+[9.590s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/_vision_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.598s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/_vision_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[9.606s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/libvision_msgs__rosidl_generator_py.so
+[9.615s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/__init__.py
+[9.623s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box2_d.py
+[9.631s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box2_d_array.py
+[9.641s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box2_d_array_s.c
+[9.649s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box2_d_s.c
+[9.658s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box3_d.py
+[9.666s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box3_d_array.py
+[9.674s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box3_d_array_s.c
+[9.683s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box3_d_s.c
+[9.691s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_classification.py
+[9.699s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_classification_s.c
+[9.708s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection2_d.py
+[9.716s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection2_d_array.py
+[9.724s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection2_d_array_s.c
+[9.733s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection2_d_s.c
+[9.742s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection3_d.py
+[9.751s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection3_d_array.py
+[9.759s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection3_d_array_s.c
+[9.767s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection3_d_s.c
+[9.776s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_label_info.py
+[9.785s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_label_info_s.c
+[9.793s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_object_hypothesis.py
+[9.802s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_object_hypothesis_s.c
+[9.810s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_object_hypothesis_with_pose.py
+[9.818s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_object_hypothesis_with_pose_s.c
+[9.826s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_point2_d.py
+[9.834s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_point2_d_s.c
+[9.844s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_pose2_d.py
+[9.852s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_pose2_d_s.c
+[9.860s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_vision_class.py
+[9.868s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_vision_class_s.c
+[9.876s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_vision_info.py
+[9.884s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_vision_info_s.c
+[9.892s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.900s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.907s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.915s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.915s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.915s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/vision_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.915s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox2D.idl
+[9.923s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox2DArray.idl
+[9.931s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox3D.idl
+[9.939s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox3DArray.idl
+[9.948s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Classification.idl
+[9.956s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection2DArray.idl
+[9.964s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection2D.idl
+[9.972s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3DArray.idl
+[9.980s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3D.idl
+[9.988s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/LabelInfo.idl
+[9.996s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesis.idl
+[10.004s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesisWithPose.idl
+[10.012s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/VisionClass.idl
+[10.020s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Point2D.idl
+[10.028s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Pose2D.idl
+[10.036s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/VisionInfo.idl
+[10.046s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox2D.msg
+[10.054s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox2DArray.msg
+[10.062s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox3D.msg
+[10.070s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/BoundingBox3DArray.msg
+[10.078s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Classification.msg
+[10.086s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection2DArray.msg
+[10.094s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection2D.msg
+[10.102s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3DArray.msg
+[10.110s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Detection3D.msg
+[10.118s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/LabelInfo.msg
+[10.127s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesis.msg
+[10.135s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/ObjectHypothesisWithPose.msg
+[10.145s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/VisionClass.msg
+[10.154s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Point2D.msg
+[10.162s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/Pose2D.msg
+[10.171s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/msg/VisionInfo.msg
+[10.179s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/include/vision_msgs/create_aabb.hpp
+[10.188s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/ament_index/resource_index/package_run_dependencies/vision_msgs
+[10.197s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/ament_index/resource_index/parent_prefix_path/vision_msgs
+[10.205s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/ament_prefix_path.sh
+[10.213s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/ament_prefix_path.dsv
+[10.222s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/path.sh
+[10.230s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/environment/path.dsv
+[10.239s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.bash
+[10.249s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.sh
+[10.257s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.zsh
+[10.266s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/local_setup.dsv
+[10.274s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.dsv
+[10.282s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/ament_index/resource_index/packages/vision_msgs
+[10.291s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/rosidl_cmake-extras.cmake
+[10.300s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[10.308s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[10.317s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[10.325s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[10.334s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[10.344s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[10.352s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgsConfig.cmake
+[10.361s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgsConfig-version.cmake
+[10.369s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.xml
+[10.378s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_generator_c.so
+[10.378s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_generator_c.so" to ""
+[10.378s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_fastrtps_c.so
+[10.379s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[10.379s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_fastrtps_cpp.so
+[10.379s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[10.379s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_introspection_c.so
+[10.379s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_introspection_c.so" to ""
+[10.379s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_c.so
+[10.380s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_c.so" to ""
+[10.380s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_introspection_cpp.so
+[10.380s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[10.380s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_cpp.so
+[10.381s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_typesupport_cpp.so" to ""
+[10.414s] Listing '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/__init__.py'...
+[10.415s] Listing '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/__init__.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box2_d.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box2_d_array.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box3_d.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_bounding_box3_d_array.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_classification.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection2_d.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection2_d_array.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection3_d.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_detection3_d_array.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_label_info.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_object_hypothesis.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_object_hypothesis_with_pose.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_point2_d.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_pose2_d.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_vision_class.py'...
+[10.415s] Compiling '/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages/vision_msgs/msg/_vision_info.py'...
+[10.418s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_generator_py.so
+[10.419s] -- Set runtime path of "/home/kch/ros2_ws/install/vision_msgs/lib/libvision_msgs__rosidl_generator_py.so" to ""
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_cExport.cmake
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_cExport-noconfig.cmake
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_cppExport.cmake
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[10.419s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cExport.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cExport.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cppExport.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/vision_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_pyExport.cmake
+[10.420s] -- Installing: /home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake/export_vision_msgs__rosidl_generator_pyExport-noconfig.cmake
+[10.423s] Invoked command in '/home/kch/ros2_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/yolo_ros:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs

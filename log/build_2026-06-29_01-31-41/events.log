@@ -1,0 +1,13 @@
+[0.000000] (-) TimerEvent: {}
+[0.000189] (-) JobUnselected: {'identifier': 'krac_control'}
+[0.000224] (-) JobUnselected: {'identifier': 'krac_interfaces'}
+[0.000288] (-) JobUnselected: {'identifier': 'krac_utils'}
+[0.000328] (-) JobUnselected: {'identifier': 'krac_vision'}
+[0.000351] (-) JobUnselected: {'identifier': 'px4_msgs'}
+[0.000372] (-) JobUnselected: {'identifier': 'px4_ros_com'}
+[0.000391] (-) JobUnselected: {'identifier': 'vision_msgs'}
+[0.000421] (-) JobUnselected: {'identifier': 'vision_msgs_rviz_plugins'}
+[0.000469] (krac_mission) JobQueued: {'identifier': 'krac_mission', 'dependencies': OrderedDict([('krac_interfaces', '/home/kch/ros2_ws/install/krac_interfaces')])}
+[0.000497] (krac_mission) JobStarted: {'identifier': 'krac_mission'}
+[0.008838] (krac_mission) JobEnded: {'identifier': 'krac_mission', 'rc': 1}
+[0.019171] (-) EventReactorShutdown: {}

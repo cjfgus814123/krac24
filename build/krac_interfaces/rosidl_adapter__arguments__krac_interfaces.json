@@ -1,0 +1,8 @@
+{
+  "package_name": "krac_interfaces",
+  "non_idl_tuples": [
+    "/home/kch/ros2_ws/src/krac_interfaces:msg/FlightPhase.msg",
+    "/home/kch/ros2_ws/src/krac_interfaces:msg/TargetInfo.msg",
+    "/home/kch/ros2_ws/src/krac_interfaces:msg/TargetError.msg"
+  ]
+}

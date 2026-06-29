@@ -1,0 +1,48 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from krac_interfaces/msg/FlightPhase.msg
+// generated code does not contain a copyright notice
+
+
+module krac_interfaces {
+  module msg {
+    module FlightPhase_Constants {
+      const uint8 READY = 0;
+      @verbatim (language="comment", text=
+        "① 버티포트 수직 이륙")
+      const uint8 TAKEOFF_VERTICAL = 1;
+      @verbatim (language="comment", text=
+        "② WP1 이동 및 호버링")
+      const uint8 HOVERING_WP1 = 2;
+      @verbatim (language="comment", text=
+        "③ 전진 비행 및 고정익 천이 (WP2 이동 중)")
+      const uint8 TRANSITION_TO_FW = 3;
+      @verbatim (language="comment", text=
+        "④ WP2 -> WP3 (고정익)")
+      const uint8 CRUISE_WP2_TO_WP3 = 4;
+      @verbatim (language="comment", text=
+        "⑤ WP3 -> WP4 (고정익)")
+      const uint8 CRUISE_WP3_TO_WP4 = 5;
+      @verbatim (language="comment", text=
+        "⑥ WP4 -> WP2 (고정익)")
+      const uint8 CRUISE_WP4_TO_WP2 = 6;
+      @verbatim (language="comment", text=
+        "⑦ 조난자 위치로 감속 및 회전익 천이")
+      const uint8 TRANSITION_TO_MC = 7;
+      @verbatim (language="comment", text=
+        "⑧ 조난자 구조 (정밀 접근 및 구조)")
+      const uint8 RESCUE_OPERATION = 8;
+      @verbatim (language="comment", text=
+        "⑨ 하기 위치 이동 및 하기")
+      const uint8 DROP_RESCUEE = 9;
+      @verbatim (language="comment", text=
+        "⑩ 버티포트 수직 착륙")
+      const uint8 LANDING_VERTICAL = 10;
+      const uint8 MISSION_COMPLETE = 11;
+    };
+    @verbatim (language="comment", text=
+      "Mission Phases based on KRAC Rulebook")
+    struct FlightPhase {
+      uint8 current_phase;
+    };
+  };
+};

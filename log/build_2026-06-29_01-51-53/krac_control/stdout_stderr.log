@@ -1,0 +1,40 @@
+[35m[1mConsolidate compiler generated dependencies of target offboard[0m
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm_P[0m
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[35m[1mConsolidate compiler generated dependencies of target precision_lander[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[ 62%] Built target offboard
+[ 62%] Built target vtol_fsm_P
+[ 87%] Built target precision_lander
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:[m[K In member function ‘[01m[Kvoid RescueMissionNode::control_loop()[m[K’:
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:265:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_detected[m[K’ was not declared in this scope
+  265 |                 if ([01;31m[Kobject_detected[m[K) {
+      |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:269:74:[m[K [01;31m[Kerror: [m[K‘[01m[KVISION_P_GAIN[m[K’ was not declared in this scope
+  269 | linear.x = clamp_velocity(-vision_error_.y * [01;31m[KVISION_P_GAIN[m[K);
+      |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:269:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp_velocity[m[K’ was not declared in this scope
+  269 |                     vel_cmd.linear.x = [01;31m[Kclamp_velocity[m[K(-vision_error_.y * VISION_P_GAIN);
+      |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:274:63:[m[K [01;31m[Kerror: [m[K‘[01m[KDESCEND_SPEED[m[K’ was not declared in this scope
+  274 |    if (dist_pixel < 40.0) vel_cmd.linear.z = [01;31m[KDESCEND_SPEED[m[K;
+      |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:330:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kobject_detected[m[K’ was not declared in this scope
+  330 |                 if ([01;31m[Kobject_detected[m[K) {
+      |                     [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:333:74:[m[K [01;31m[Kerror: [m[K‘[01m[KVISION_P_GAIN[m[K’ was not declared in this scope
+  333 | linear.x = clamp_velocity(-vision_error_.y * [01;31m[KVISION_P_GAIN[m[K);
+      |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:333:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp_velocity[m[K’ was not declared in this scope
+  333 |                     vel_cmd.linear.x = [01;31m[Kclamp_velocity[m[K(-vision_error_.y * VISION_P_GAIN);
+      |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:336:63:[m[K [01;31m[Kerror: [m[K‘[01m[KDESCEND_SPEED[m[K’ was not declared in this scope
+  336 |    if (dist_pixel < 30.0) vel_cmd.linear.z = [01;31m[KDESCEND_SPEED[m[K;
+      |                                              [01;31m[K^~~~~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/vtol_fsm.dir/build.make:76: CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/vtol_fsm.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

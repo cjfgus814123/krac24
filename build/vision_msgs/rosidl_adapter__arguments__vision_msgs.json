@@ -1,0 +1,21 @@
+{
+  "package_name": "vision_msgs",
+  "non_idl_tuples": [
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/BoundingBox2D.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/BoundingBox2DArray.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/BoundingBox3D.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/BoundingBox3DArray.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/Classification.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/Detection2DArray.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/Detection2D.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/Detection3DArray.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/Detection3D.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/LabelInfo.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/ObjectHypothesis.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/ObjectHypothesisWithPose.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/VisionClass.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/Point2D.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/Pose2D.msg",
+    "/home/kch/ros2_ws/vision_msgs/vision_msgs:msg/VisionInfo.msg"
+  ]
+}

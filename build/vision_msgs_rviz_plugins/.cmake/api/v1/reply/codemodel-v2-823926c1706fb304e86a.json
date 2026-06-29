@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-88da1354809409885390.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "vision_msgs_rviz_plugins",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d436e5314ce833f38df9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msgs_rviz_plugins::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msgs_rviz_plugins-42dd4949b45d7bdf22e4.json",
+					"name" : "vision_msgs_rviz_plugins",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msgs_rviz_plugins_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msgs_rviz_plugins_autogen-09a8a4190489ae785b21.json",
+					"name" : "vision_msgs_rviz_plugins_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vision_msgs_rviz_plugins_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vision_msgs_rviz_plugins_uninstall-2a135e22647a768e07f0.json",
+					"name" : "vision_msgs_rviz_plugins_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kch/ros2_ws/build/vision_msgs_rviz_plugins",
+		"source" : "/home/kch/ros2_ws/vision_msgs/vision_msgs_rviz_plugins"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

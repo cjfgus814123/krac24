@@ -1,0 +1,1 @@
+/home/kch/ros2_ws/build/krac_interfaces/rosidl_generator_c/krac_interfaces/msg/detail/flight_phase__struct.h
