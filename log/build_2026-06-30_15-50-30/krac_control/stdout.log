@@ -1,0 +1,6 @@
+[ 37%] [32mBuilding CXX object CMakeFiles/precision_lander.dir/src/precision_lander.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[ 50%] Built target vtol_fsm_P
+[ 75%] Built target offboard
+[ 87%] [32m[1mLinking CXX executable vtol_fsm[0m
+[ 87%] Built target vtol_fsm

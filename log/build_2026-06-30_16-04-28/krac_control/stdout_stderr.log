@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[ 25%] Built target vtol_fsm_P
+[ 62%] [32mBuilding CXX object CMakeFiles/precision_lander.dir/src/precision_lander.cpp.o[0m
+[ 62%] Built target vtol_fsm
+[ 87%] Built target offboard
+[01m[K/home/kch/ros2_ws/src/krac_control/src/precision_lander.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Kvisualization_msgs/msg/marker.hpp: No such file or directory
+    9 | #include [01;31m[K<visualization_msgs/msg/marker.hpp>[m[K // 💡 시각화용
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/precision_lander.dir/build.make:76: CMakeFiles/precision_lander.dir/src/precision_lander.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/precision_lander.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

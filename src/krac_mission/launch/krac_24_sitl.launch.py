@@ -39,15 +39,15 @@ def generate_launch_description():
 
         Node(
             package='krac_vision',
-            executable='yolo_node',
-            name='yolo_detector_node',
+            executable='vision_tracker',
+            name='vision_tracker_node',
             output='screen',
             parameters=[{
-                'model': '/home/kch/ros2_ws/src/krac_vision/weights/best.engine',
+                'model': '/home/kch/ros2_ws/src/krac_vision/weights/best.pt',
                 'threshold': 0.6,
                 'device': 'cuda:0'
             }],
-            remappings=[('/camera', '/camera/image_raw')]
+            remappings=[('/camera/image_raw', '/camera')] # 💡 순서를 이렇게 바꿔야 Gazebo 영상을 파이썬이 받습니다.
         ),
 
         Node(

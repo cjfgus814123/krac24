@@ -126,7 +126,7 @@
                 "type": "SimpleItem"
             },
             {
-                "AMSLAltAboveTerrain": null,
+                "AMSLAltAboveTerrain": 10,
                 "Altitude": 10,
                 "AltitudeMode": 1,
                 "autoContinue": true,
@@ -145,26 +145,23 @@
                 "type": "SimpleItem"
             },
             {
-                "AMSLAltAboveTerrain": null,
-                "Altitude": 30,
-                "AltitudeMode": 1,
                 "autoContinue": true,
-                "command": 84,
+                "command": 3000,
                 "doJumpId": 8,
-                "frame": 3,
+                "frame": 2,
                 "params": [
+                    4,
                     0,
                     0,
                     0,
-                    null,
-                    35.068565477588486,
-                    128.08667536510472,
-                    30
+                    0,
+                    0,
+                    0
                 ],
                 "type": "SimpleItem"
             },
             {
-                "AMSLAltAboveTerrain": null,
+                "AMSLAltAboveTerrain": 30,
                 "Altitude": 30,
                 "AltitudeMode": 1,
                 "autoContinue": true,
@@ -183,7 +180,7 @@
                 "type": "SimpleItem"
             },
             {
-                "AMSLAltAboveTerrain": null,
+                "AMSLAltAboveTerrain": 30,
                 "Altitude": 30,
                 "AltitudeMode": 1,
                 "autoContinue": true,
@@ -202,7 +199,7 @@
                 "type": "SimpleItem"
             },
             {
-                "AMSLAltAboveTerrain": null,
+                "AMSLAltAboveTerrain": 30,
                 "Altitude": 30,
                 "AltitudeMode": 1,
                 "autoContinue": true,
@@ -221,7 +218,7 @@
                 "type": "SimpleItem"
             },
             {
-                "AMSLAltAboveTerrain": null,
+                "AMSLAltAboveTerrain": 30,
                 "Altitude": 30,
                 "AltitudeMode": 1,
                 "autoContinue": true,
@@ -256,7 +253,7 @@
                 "type": "SimpleItem"
             },
             {
-                "AMSLAltAboveTerrain": null,
+                "AMSLAltAboveTerrain": 10,
                 "Altitude": 10,
                 "AltitudeMode": 1,
                 "autoContinue": true,

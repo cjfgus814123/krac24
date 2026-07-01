@@ -30,7 +30,7 @@ setup(
     entry_points={
         'console_scripts': [
             # ros2 run krac_vision [이름] 명령어로 실행할 파일들 등록
-            'yolo_node = krac_vision.vision_tracker:main',
+            'vision_tracker = krac_vision.vision_tracker:main',
         ],
     },
 )

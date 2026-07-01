@@ -38,51 +38,40 @@ class MissionLoader(Node):
         time.sleep(1)
 
         # 3. .plan 파일 파싱
-        try:
-            with open(file_path, 'r') as f:
-                data = json.load(f)
-        except Exception as e:
-            self.get_logger().error(f"Failed to load JSON: {e}")
-            return
-
-        mission_items = data['mission']['items']
+        with open(file_path, 'r') as f:
+            plan_data = json.load(f)
         waypoints = []
 
-        # [핵심] 무조건 첫 번째 아이템을 VTOL_TAKEOFF(84)로 강제 지정
-        if mission_items[0]['command'] != 84:
-            self.get_logger().warn(f"First item is {mission_items[0]['command']}. Forcing VTOL_TAKEOFF (84).")
-            mission_items[0]['command'] = 84
+        # 💡 [핵심 추가] JSON의 null(None) 값을 안전하게 0.0으로 변환하는 함수
+        def safe_float(val):
+            return float(val) if val is not None else 0.0
 
-        # 4. Waypoint 메시지 변환
-        for i, item in enumerate(mission_items):
+        for i, item in enumerate(plan_data['mission']['items']):
             wp = Waypoint()
+            wp.frame = item.get('frame', 3)
+            wp.command = item.get('command', 16)
             
-            # QGC .plan 파일 구조: params = [p1, p2, p3, p4, lat, lon, alt]
-            # null 값은 0.0으로 안전하게 변환
-            raw_params = item.get('params', [0, 0, 0, 0, 0, 0, 0])
-            params = [0.0 if p is None else float(p) for p in raw_params]
-
-            wp.frame = item.get('frame', 3)  # 기본값: GLOBAL_REL_ALT (3)
-            wp.command = item['command']
-            wp.is_current = (i == 0)         # PX4는 첫 번째 인덱스만 True여야 미션을 정상 인식함
+            # 💡 [핵심 추가] 첫 번째 웨이포인트를 현재 활성화된 미션으로 강제 지정
+            wp.is_current = (i == 0)
             wp.autocontinue = item.get('autoContinue', True)
             
-            # [핵심] 첫 번째 아이템(이륙)일 때 PX4가 좋아하는 깔끔한 파라미터로 매핑
-            if i == 0 and wp.command == 84:
-                wp.param1 = 0.0  # Transition state (0 = 멀티콥터 이륙)
-                wp.param2 = 0.0  # 비워둠 (Empty)
-                wp.param3 = 0.0  # 비워둠
-                wp.param4 = 0.0  # Yaw angle (0 = 현재 방향 유지)
-            else:
-                wp.param1 = params[0]
-                wp.param2 = params[1]
-                wp.param3 = params[2]
-                wp.param4 = params[3]
+            params = item.get('params', [0]*7)
             
-            # GPS 좌표 및 고도 (param 5, 6, 7)
-            wp.x_lat = params[4]
-            wp.y_long = params[5]
-            wp.z_alt = params[6]
+            if i == 0 and wp.command == 84:
+                wp.param1 = 0.0  
+                wp.param2 = 0.0  
+                wp.param3 = 0.0  
+                wp.param4 = 0.0  
+            else:
+                # safe_float를 사용하여 None 에러 방지
+                wp.param1 = safe_float(params[0])
+                wp.param2 = safe_float(params[1])
+                wp.param3 = safe_float(params[2])
+                wp.param4 = safe_float(params[3])
+            
+            wp.x_lat = safe_float(params[4])
+            wp.y_long = safe_float(params[5])
+            wp.z_alt = safe_float(params[6])
 
             waypoints.append(wp)
 
@@ -91,14 +80,14 @@ class MissionLoader(Node):
         req_push.start_index = 0
         req_push.waypoints = waypoints
 
-        self.get_logger().info(f"Uploading {len(waypoints)} items from .plan file (VTOL Takeoff Ready)...")
+        self.get_logger().info(f"Uploading {len(waypoints)} items from .plan file...")
         future_push = self.client_wp_push.call_async(req_push)
         rclpy.spin_until_future_complete(self, future_push)
 
-        if future_push.result().success:
-            self.get_logger().info("✅ Mission Upload SUCCESS!")
+        if future_push.result() and future_push.result().success:
+            self.get_logger().info("✅ Mission push SUCCESS!")
         else:
-            self.get_logger().error(f"❌ Mission Upload FAILED! Sent: {future_push.result().wp_transfered}")
+            self.get_logger().error("❌ Mission push FAILED!")
 
 def main(args=None):
     rclpy.init(args=args)

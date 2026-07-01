@@ -1,0 +1,17 @@
+[0.419s] Invoking command in '/home/kch/ros2_ws/build/krac_vision': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:/home/kch/ros2_ws/install/krac_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kch/ros2_ws/build/krac_vision/build --no-deps symlink_data
+[0.556s] running develop
+[0.648s] running egg_info
+[0.648s] writing krac_vision.egg-info/PKG-INFO
+[0.648s] writing dependency_links to krac_vision.egg-info/dependency_links.txt
+[0.648s] writing entry points to krac_vision.egg-info/entry_points.txt
+[0.648s] writing requirements to krac_vision.egg-info/requires.txt
+[0.649s] writing top-level names to krac_vision.egg-info/top_level.txt
+[0.650s] reading manifest file 'krac_vision.egg-info/SOURCES.txt'
+[0.651s] writing manifest file 'krac_vision.egg-info/SOURCES.txt'
+[0.652s] running build_ext
+[0.652s] Creating /home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages/krac-vision.egg-link (link to .)
+[0.652s] Installing yolo_node script to /home/kch/ros2_ws/install/krac_vision/lib/krac_vision
+[0.653s] 
+[0.653s] Installed /home/kch/ros2_ws/build/krac_vision
+[0.653s] running symlink_data
+[0.673s] Invoked command in '/home/kch/ros2_ws/build/krac_vision' returned '0': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:/home/kch/ros2_ws/install/krac_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/kch/ros2_ws/build/krac_vision/build --no-deps symlink_data
