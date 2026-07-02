@@ -47,7 +47,7 @@ def generate_launch_description():
                 'threshold': 0.6,
                 'device': 'cuda:0'
             }],
-            remappings=[('/camera/image_raw', '/camera')] # 💡 순서를 이렇게 바꿔야 Gazebo 영상을 파이썬이 받습니다.
+            
         ),
 
         Node(

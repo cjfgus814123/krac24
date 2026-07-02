@@ -1,0 +1,31 @@
+[0.014s] Invoking command in '/home/kch/ros2_ws/build/krac_control': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/krac_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[0.108s] [ 25%] Built target precision_lander
+[0.114s] [ 75%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[0.114s] [ 87%] Built target vtol_fsm_P
+[0.114s] [ 87%] Built target offboard
+[10.277s] [100%] [32m[1mLinking CXX executable vtol_fsm[0m
+[10.908s] [100%] Built target vtol_fsm
+[10.917s] Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '0': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/krac_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[10.919s] Invoking command in '/home/kch/ros2_ws/build/krac_control': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/krac_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_control
+[10.924s] -- Install configuration: ""
+[10.925s] -- Execute custom install script
+[10.926s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm
+[10.926s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm_P
+[10.926s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/offboard
+[10.926s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/precision_lander
+[10.927s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/package_run_dependencies/krac_control
+[10.927s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/parent_prefix_path/krac_control
+[10.928s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/ament_prefix_path.sh
+[10.928s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/ament_prefix_path.dsv
+[10.928s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/path.sh
+[10.928s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/path.dsv
+[10.928s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.bash
+[10.929s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.sh
+[10.929s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.zsh
+[10.929s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.dsv
+[10.929s] -- Symlinking: /home/kch/ros2_ws/install/krac_control/share/krac_control/package.dsv
+[10.935s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/packages/krac_control
+[10.936s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/cmake/krac_controlConfig.cmake
+[10.936s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/cmake/krac_controlConfig-version.cmake
+[10.936s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/package.xml
+[10.938s] Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '0': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/krac_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_control

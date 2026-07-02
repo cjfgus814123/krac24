@@ -1,1 +1,0 @@
-/home/kch/ros2_ws/src/krac_vision/setup.py

@@ -33,7 +33,7 @@ public:
         this->declare_parameter("rescue_wp_seq", 7);     // 구조 지점 웨이포인트 번호
         this->declare_parameter("resume_wp_seq", 8);     // 복귀 시작 웨이포인트 번호
         this->declare_parameter("landing_wp_seq", 14);   // 최종 버티포트 착륙 웨이포인트 번호
-        this->declare_parameter("safe_ascend_alt", 10.0); // 구조 후 안전 상승 고도
+        this->declare_parameter("safe_ascend_alt", 30.0); // 구조 후 안전 상승 고도
 
         rescue_wp_seq_ = this->get_parameter("rescue_wp_seq").as_int();
         resume_wp_seq_ = this->get_parameter("resume_wp_seq").as_int();
