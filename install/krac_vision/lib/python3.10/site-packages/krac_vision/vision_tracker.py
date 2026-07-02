@@ -5,7 +5,7 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import PoseStamped, Twist  # [추가됨] 고도 및 제어 속도 구독용
-from custom_interfaces.msg import TargetError
+from krac_interfaces.msg import TargetError
 from cv_bridge import CvBridge
 import cv2
 import numpy as np
