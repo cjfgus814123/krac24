@@ -58,11 +58,11 @@ def generate_launch_description():
         ),
 
         Node(
-            package='krac_control', # 앞서 krac_control로 수정했던 FSM 노드
+            package='krac_control', 
             executable='vtol_fsm',
-            name='vtol_fsm_node',
+            name='rescue_mission_node',
             output='screen',
-            parameters=[os.path.join(config_dir, 'waypoints.yaml')]
+            #parameters=[os.path.join(config_dir, 'waypoints.yaml')]
         ),
 
         # 💡 Node 대신 ExecuteProcess를 사용하여 직접 python 스크립트 실행

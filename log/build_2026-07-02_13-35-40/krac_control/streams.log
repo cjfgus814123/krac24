@@ -1,0 +1,15 @@
+[0.026s] Invoking command in '/home/kch/ros2_ws/build/krac_control': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[0.060s] [35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[0.070s] [ 50%] Built target vtol_fsm_P
+[0.070s] [ 50%] Built target offboard
+[0.070s] [ 75%] Built target precision_lander
+[0.072s] [ 87%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[1.864s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:[m[K In constructor ‘[01m[KRescueMissionNode::RescueMissionNode()[m[K’:
+[1.864s] [01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:52:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_setpoint_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_setpoint_pub_[m[K’?
+[1.864s]    52 |         [01;31m[Kvel_setpoint_pub[m[K = this->create_publisher<geometry_msgs::msg::Twist>("mavros/setpoint_velocity/cmd_vel_unstamped", 10);
+[1.864s]       |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[1.864s]       |         [32m[Kvel_setpoint_pub_[m[K
+[5.504s] gmake[2]: *** [CMakeFiles/vtol_fsm.dir/build.make:76: CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o] Error 1
+[5.505s] gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/vtol_fsm.dir/all] Error 2
+[5.505s] gmake: *** [Makefile:146: all] Error 2
+[5.508s] Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '2': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16

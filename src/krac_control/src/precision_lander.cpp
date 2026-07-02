@@ -13,7 +13,7 @@ using namespace std::chrono_literals;
 class PrecisionLander : public rclcpp::Node {
 public:
     PrecisionLander() : Node("precision_lander_node") {
-        vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/mavros/setpoint_velocity/cmd_vel_unstamped", 10);
+        vel_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("/precision_lander/cmd_vel", 10);
         vision_sub_ = this->create_subscription<krac_interfaces::msg::TargetError>("/vision/target_error", 10, std::bind(&PrecisionLander::vision_cb, this, std::placeholders::_1));
         pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>("/mavros/local_position/pose", 10, std::bind(&PrecisionLander::pose_cb, this, std::placeholders::_1));
         

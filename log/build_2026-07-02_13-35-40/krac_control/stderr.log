@@ -1,0 +1,8 @@
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:[m[K In constructor ‘[01m[KRescueMissionNode::RescueMissionNode()[m[K’:
+[01m[K/home/kch/ros2_ws/src/krac_control/src/vtol_fsm.cpp:52:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_setpoint_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kvel_setpoint_pub_[m[K’?
+   52 |         [01;31m[Kvel_setpoint_pub[m[K = this->create_publisher<geometry_msgs::msg::Twist>("mavros/setpoint_velocity/cmd_vel_unstamped", 10);
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |         [32m[Kvel_setpoint_pub_[m[K
+gmake[2]: *** [CMakeFiles/vtol_fsm.dir/build.make:76: CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:143: CMakeFiles/vtol_fsm.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

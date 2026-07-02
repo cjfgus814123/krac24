@@ -1,0 +1,1127 @@
+[0.055s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.055s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x79dfa346df30>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x79dfa355ee60>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x79dfa355ee60>>)
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.140s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kch/ros2_ws'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.140s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.141s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track10) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track11) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track12) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track13) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track14) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track15) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track16) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track17) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track18) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track19) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track2) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track20) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extensions ['cmake', 'python']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'cmake'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'python'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extensions ['python_setup_py']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track21) by extension 'python_setup_py'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'ros'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track22) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track23) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track24) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'python'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extensions ['python_setup_py']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track25) by extension 'python_setup_py'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'ros'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extensions ['cmake', 'python']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'cmake'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track26) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track27) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track28) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track29) by extension 'python_setup_py'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'ros'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extensions ['cmake', 'python']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'cmake'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'python'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extensions ['python_setup_py']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track3) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track4) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track5) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track6) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'ros'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extensions ['cmake', 'python']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'cmake'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'python'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extensions ['python_setup_py']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track7) by extension 'python_setup_py'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track8) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(runs/detect/track9) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extensions ['ignore', 'ignore_ament_install']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extension 'ignore'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extension 'ignore_ament_install'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extensions ['colcon_pkg']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extension 'colcon_pkg'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extensions ['colcon_meta']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extension 'colcon_meta'
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extensions ['ros']
+[0.171s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_control) by extension 'ros'
+[0.173s] DEBUG:colcon.colcon_core.package_identification:Package 'src/krac_control' with type 'ros.ament_cmake' and name 'krac_control'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_interfaces) by extension 'ros'
+[0.173s] DEBUG:colcon.colcon_core.package_identification:Package 'src/krac_interfaces' with type 'ros.ament_cmake' and name 'krac_interfaces'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_mission) by extension 'ros'
+[0.174s] DEBUG:colcon.colcon_core.package_identification:Package 'src/krac_mission' with type 'ros.ament_cmake' and name 'krac_mission'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_utils) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package 'src/krac_utils' with type 'ros.ament_cmake' and name 'krac_utils'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/krac_vision) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package 'src/krac_vision' with type 'ros.ament_python' and name 'krac_vision'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_pkg']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_pkg'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['colcon_meta']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'colcon_meta'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extensions ['ros']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_msgs) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_msgs' with type 'ros.ament_cmake' and name 'px4_msgs'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/px4_ros_com) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/px4_ros_com' with type 'ros.ament_cmake' and name 'px4_ros_com'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'ros'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extensions ['cmake', 'python']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'cmake'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'python'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extensions ['python_setup_py']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs) by extension 'python_setup_py'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extension 'ignore'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extension 'ignore_ament_install'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extensions ['colcon_pkg']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'vision_msgs/vision_msgs' with type 'ros.ament_cmake' and name 'vision_msgs'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extensions ['ignore', 'ignore_ament_install']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extension 'ignore'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extension 'ignore_ament_install'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extensions ['colcon_pkg']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extension 'colcon_pkg'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extensions ['colcon_meta']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extension 'colcon_meta'
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extensions ['ros']
+[0.178s] Level 1:colcon.colcon_core.package_identification:_identify(vision_msgs/vision_msgs_rviz_plugins) by extension 'ros'
+[0.178s] DEBUG:colcon.colcon_core.package_identification:Package 'vision_msgs/vision_msgs_rviz_plugins' with type 'ros.ament_cmake' and name 'vision_msgs_rviz_plugins'
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.178s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.190s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.191s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 9 installed packages in /home/kch/ros2_ws/install
+[0.192s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 295 installed packages in /opt/ros/humble
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'krac_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.211s] DEBUG:colcon.colcon_core.verb:Building package 'krac_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/krac_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/krac_interfaces', 'merge_install': False, 'path': '/home/kch/ros2_ws/src/krac_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.211s] Level 5:colcon.colcon_core.verb:set package 'px4_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.211s] DEBUG:colcon.colcon_core.verb:Building package 'px4_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/px4_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/px4_msgs', 'merge_install': False, 'path': '/home/kch/ros2_ws/src/px4_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'vision_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/vision_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/vision_msgs', 'merge_install': False, 'path': '/home/kch/ros2_ws/vision_msgs/vision_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'krac_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/krac_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/krac_control', 'merge_install': False, 'path': '/home/kch/ros2_ws/src/krac_control', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_mission' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'krac_mission' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/krac_mission', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/krac_mission', 'merge_install': False, 'path': '/home/kch/ros2_ws/src/krac_mission', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'cmake_target' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'cmake_clean_cache' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'cmake_clean_first' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'cmake_force_configure' from command line to 'False'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'ament_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'catkin_cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_utils' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.212s] DEBUG:colcon.colcon_core.verb:Building package 'krac_utils' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/krac_utils', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/krac_utils', 'merge_install': False, 'path': '/home/kch/ros2_ws/src/krac_utils', 'symlink_install': False, 'test_result_base': None}
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'cmake_args' from command line to 'None'
+[0.212s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'krac_vision' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'krac_vision' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/krac_vision', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/krac_vision', 'merge_install': False, 'path': '/home/kch/ros2_ws/src/krac_vision', 'symlink_install': False, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'px4_ros_com' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'px4_ros_com' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/px4_ros_com', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/px4_ros_com', 'merge_install': False, 'path': '/home/kch/ros2_ws/src/px4_ros_com', 'symlink_install': False, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'vision_msgs_rviz_plugins' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'vision_msgs_rviz_plugins' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins', 'merge_install': False, 'path': '/home/kch/ros2_ws/vision_msgs/vision_msgs_rviz_plugins', 'symlink_install': False, 'test_result_base': None}
+[0.213s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.214s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.214s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/src/krac_interfaces' with build type 'ament_cmake'
+[0.214s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/src/krac_interfaces'
+[0.216s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.216s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.216s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.218s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/src/px4_msgs' with build type 'ament_cmake'
+[0.219s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/src/px4_msgs'
+[0.219s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.219s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.221s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/vision_msgs/vision_msgs' with build type 'ament_cmake'
+[0.221s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/vision_msgs/vision_msgs'
+[0.221s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.221s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_interfaces -- -j16 -l16
+[0.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/px4_msgs -- -j16 -l16
+[0.232s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs -- -j16 -l16
+[0.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_interfaces -- -j16 -l16
+[0.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_interfaces
+[0.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs -- -j16 -l16
+[0.470s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/vision_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs
+[0.518s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_interfaces)
+[0.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_interfaces
+[0.520s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces' for CMake module files
+[0.520s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces' for CMake config files
+[0.521s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_interfaces', 'cmake_prefix_path')
+[0.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/cmake_prefix_path.ps1'
+[0.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/cmake_prefix_path.dsv'
+[0.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/cmake_prefix_path.sh'
+[0.523s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/lib'
+[0.523s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_interfaces', 'ld_library_path_lib')
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/ld_library_path_lib.ps1'
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/ld_library_path_lib.dsv'
+[0.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/ld_library_path_lib.sh'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/bin'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/lib/pkgconfig/krac_interfaces.pc'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/lib/python3.10/site-packages'
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/bin'
+[0.524s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.ps1'
+[0.525s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.dsv'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.sh'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.bash'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.zsh'
+[0.527s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_interfaces/share/colcon-core/packages/krac_interfaces)
+[0.527s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_interfaces)
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces' for CMake module files
+[0.528s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces' for CMake config files
+[0.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_interfaces', 'cmake_prefix_path')
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/cmake_prefix_path.ps1'
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/cmake_prefix_path.dsv'
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/cmake_prefix_path.sh'
+[0.529s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/lib'
+[0.529s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_interfaces', 'ld_library_path_lib')
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/ld_library_path_lib.ps1'
+[0.530s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/ld_library_path_lib.dsv'
+[0.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/hook/ld_library_path_lib.sh'
+[0.531s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/bin'
+[0.531s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/lib/pkgconfig/krac_interfaces.pc'
+[0.531s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/lib/python3.10/site-packages'
+[0.531s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_interfaces/bin'
+[0.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.ps1'
+[0.532s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.dsv'
+[0.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.sh'
+[0.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.bash'
+[0.532s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_interfaces/share/krac_interfaces/package.zsh'
+[0.532s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_interfaces/share/colcon-core/packages/krac_interfaces)
+[0.533s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/src/krac_control' with build type 'ament_cmake'
+[0.533s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/src/krac_control'
+[0.533s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.536s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/src/krac_mission' with build type 'ament_cmake'
+[0.536s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/src/krac_mission'
+[0.536s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.536s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.539s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/src/krac_utils' with build type 'ament_cmake'
+[0.539s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/src/krac_utils'
+[0.539s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.539s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.542s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/kch/ros2_ws/src/krac_vision' with build type 'ament_python'
+[0.542s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_vision', 'ament_prefix_path')
+[0.542s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/hook/ament_prefix_path.ps1'
+[0.542s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/hook/ament_prefix_path.dsv'
+[0.543s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/hook/ament_prefix_path.sh'
+[0.543s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.543s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_control': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[0.548s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msgs)
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs' for CMake module files
+[0.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_mission': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_mission -- -j16 -l16
+[0.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/vision_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs
+[0.549s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs' for CMake config files
+[0.551s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'cmake_prefix_path')
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.ps1'
+[0.551s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.dsv'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.sh'
+[0.552s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/lib'
+[0.552s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'ld_library_path_lib')
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.ps1'
+[0.552s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.dsv'
+[0.553s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.sh'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/bin'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/lib/pkgconfig/vision_msgs.pc'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/lib/python3.10/site-packages'
+[0.553s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/bin'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.ps1'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.dsv'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.sh'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.bash'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.zsh'
+[0.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/vision_msgs/share/colcon-core/packages/vision_msgs)
+[0.555s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msgs)
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs' for CMake module files
+[0.555s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs' for CMake config files
+[0.557s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'cmake_prefix_path')
+[0.557s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.ps1'
+[0.557s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.dsv'
+[0.558s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/cmake_prefix_path.sh'
+[0.559s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/lib'
+[0.559s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs', 'ld_library_path_lib')
+[0.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.ps1'
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.dsv'
+[0.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/hook/ld_library_path_lib.sh'
+[0.560s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/bin'
+[0.560s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/lib/pkgconfig/vision_msgs.pc'
+[0.560s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/lib/python3.10/site-packages'
+[0.560s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs/bin'
+[0.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.ps1'
+[0.561s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.dsv'
+[0.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.sh'
+[0.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.bash'
+[0.562s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/package.zsh'
+[0.562s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/vision_msgs/share/colcon-core/packages/vision_msgs)
+[0.564s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/vision_msgs/vision_msgs_rviz_plugins' with build type 'ament_cmake'
+[0.564s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/vision_msgs/vision_msgs_rviz_plugins'
+[0.564s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.564s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.565s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_utils': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_utils -- -j16 -l16
+[0.727s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/kch/ros2_ws/src/krac_vision'
+[0.727s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_mission' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_mission -- -j16 -l16
+[0.732s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_mission': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_mission
+[0.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs_rviz_plugins -- -j16 -l16
+[0.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_utils' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_utils -- -j16 -l16
+[0.735s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_utils': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_utils
+[0.748s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_mission)
+[0.749s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission' for CMake module files
+[0.749s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_mission' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_mission
+[0.750s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission' for CMake config files
+[0.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_mission', 'cmake_prefix_path')
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/hook/cmake_prefix_path.ps1'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/hook/cmake_prefix_path.dsv'
+[0.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/hook/cmake_prefix_path.sh'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/lib'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/bin'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/lib/pkgconfig/krac_mission.pc'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/lib/python3.10/site-packages'
+[0.751s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/bin'
+[0.751s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.ps1'
+[0.752s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.dsv'
+[0.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.sh'
+[0.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.bash'
+[0.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.zsh'
+[0.752s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_mission/share/colcon-core/packages/krac_mission)
+[0.753s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_mission)
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission' for CMake module files
+[0.753s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission' for CMake config files
+[0.753s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_mission', 'cmake_prefix_path')
+[0.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/hook/cmake_prefix_path.ps1'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/hook/cmake_prefix_path.dsv'
+[0.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/hook/cmake_prefix_path.sh'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/lib'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/bin'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/lib/pkgconfig/krac_mission.pc'
+[0.754s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/lib/python3.10/site-packages'
+[0.755s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_mission/bin'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.ps1'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.dsv'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.sh'
+[0.755s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.bash'
+[0.756s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.zsh'
+[0.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_mission/share/colcon-core/packages/krac_mission)
+[0.757s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_utils)
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils' for CMake module files
+[0.757s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_utils' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_utils
+[0.757s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils' for CMake config files
+[0.758s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_utils', 'cmake_prefix_path')
+[0.758s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/hook/cmake_prefix_path.ps1'
+[0.759s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/hook/cmake_prefix_path.dsv'
+[0.760s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/hook/cmake_prefix_path.sh'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/lib'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/bin'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/lib/pkgconfig/krac_utils.pc'
+[0.760s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/lib/python3.10/site-packages'
+[0.761s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/bin'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.ps1'
+[0.761s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.dsv'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.sh'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.bash'
+[0.762s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.zsh'
+[0.763s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_utils/share/colcon-core/packages/krac_utils)
+[0.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_utils)
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils' for CMake module files
+[0.763s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils' for CMake config files
+[0.764s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_utils', 'cmake_prefix_path')
+[0.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/hook/cmake_prefix_path.ps1'
+[0.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/hook/cmake_prefix_path.dsv'
+[0.764s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/hook/cmake_prefix_path.sh'
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/lib'
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/bin'
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/lib/pkgconfig/krac_utils.pc'
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/lib/python3.10/site-packages'
+[0.765s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_utils/bin'
+[0.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.ps1'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.dsv'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.sh'
+[0.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.bash'
+[0.767s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_utils/share/krac_utils/package.zsh'
+[0.767s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_utils/share/colcon-core/packages/krac_utils)
+[0.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs_rviz_plugins -- -j16 -l16
+[0.838s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs_rviz_plugins
+[0.859s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msgs_rviz_plugins)
+[0.859s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins' for CMake module files
+[0.860s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs_rviz_plugins
+[0.860s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins' for CMake config files
+[0.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs_rviz_plugins', 'cmake_prefix_path')
+[0.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/cmake_prefix_path.ps1'
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/cmake_prefix_path.dsv'
+[0.861s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/cmake_prefix_path.sh'
+[0.862s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib'
+[0.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs_rviz_plugins', 'ld_library_path_lib')
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/ld_library_path_lib.ps1'
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/ld_library_path_lib.dsv'
+[0.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/ld_library_path_lib.sh'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/bin'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/pkgconfig/vision_msgs_rviz_plugins.pc'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/python3.10/site-packages'
+[0.863s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/bin'
+[0.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.ps1'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.dsv'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.sh'
+[0.864s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.bash'
+[0.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.zsh'
+[0.865s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/colcon-core/packages/vision_msgs_rviz_plugins)
+[0.865s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_msgs_rviz_plugins)
+[0.865s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins' for CMake module files
+[0.866s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins' for CMake config files
+[0.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs_rviz_plugins', 'cmake_prefix_path')
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/cmake_prefix_path.ps1'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/cmake_prefix_path.dsv'
+[0.866s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/cmake_prefix_path.sh'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib'
+[0.867s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_msgs_rviz_plugins', 'ld_library_path_lib')
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/ld_library_path_lib.ps1'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/ld_library_path_lib.dsv'
+[0.867s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/hook/ld_library_path_lib.sh'
+[0.867s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/bin'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/pkgconfig/vision_msgs_rviz_plugins.pc'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/python3.10/site-packages'
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/bin'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.ps1'
+[0.868s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.dsv'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.sh'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.bash'
+[0.869s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.zsh'
+[0.869s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/colcon-core/packages/vision_msgs_rviz_plugins)
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --build /home/kch/ros2_ws/build/px4_msgs -- -j16 -l16
+[0.872s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/px4_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/px4_msgs
+[0.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/src/krac_vision': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/krac_vision build --build-base /home/kch/ros2_ws/build/krac_vision/build install --record /home/kch/ros2_ws/build/krac_vision/install.log --single-version-externally-managed install_data
+[1.112s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_vision' for CMake module files
+[1.112s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/src/krac_vision' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/krac_vision build --build-base /home/kch/ros2_ws/build/krac_vision/build install --record /home/kch/ros2_ws/build/krac_vision/install.log --single-version-externally-managed install_data
+[1.113s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_vision' for CMake config files
+[1.114s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_vision/lib'
+[1.114s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_vision/bin'
+[1.114s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_vision/lib/pkgconfig/krac_vision.pc'
+[1.114s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages'
+[1.115s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_vision', 'pythonpath')
+[1.115s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/hook/pythonpath.ps1'
+[1.116s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/hook/pythonpath.dsv'
+[1.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/hook/pythonpath.sh'
+[1.116s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_vision/bin'
+[1.116s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_vision)
+[1.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/package.ps1'
+[1.117s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/package.dsv'
+[1.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/package.sh'
+[1.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/package.bash'
+[1.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_vision/share/krac_vision/package.zsh'
+[1.118s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_vision/share/colcon-core/packages/krac_vision)
+[1.237s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs' for CMake module files
+[1.238s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/px4_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble /usr/bin/cmake --install /home/kch/ros2_ws/build/px4_msgs
+[1.238s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs' for CMake config files
+[1.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[1.258s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/lib'
+[1.258s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[1.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/bin'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/lib/python3.10/site-packages'
+[1.259s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/bin'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[1.260s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[1.261s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[1.261s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[1.261s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_msgs)
+[1.261s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs' for CMake module files
+[1.262s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs' for CMake config files
+[1.278s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'cmake_prefix_path')
+[1.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.ps1'
+[1.279s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.dsv'
+[1.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/cmake_prefix_path.sh'
+[1.279s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/lib'
+[1.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_msgs', 'ld_library_path_lib')
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.ps1'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.dsv'
+[1.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/hook/ld_library_path_lib.sh'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/bin'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/lib/pkgconfig/px4_msgs.pc'
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/lib/python3.10/site-packages'
+[1.281s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_msgs/bin'
+[1.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.ps1'
+[1.281s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.dsv'
+[1.281s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.sh'
+[1.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.bash'
+[1.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_msgs/share/px4_msgs/package.zsh'
+[1.282s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/px4_msgs/share/colcon-core/packages/px4_msgs)
+[1.282s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kch/ros2_ws/src/px4_ros_com' with build type 'ament_cmake'
+[1.282s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kch/ros2_ws/src/px4_ros_com'
+[1.283s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.283s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.294s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/px4_ros_com -- -j16 -l16
+[1.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/px4_ros_com -- -j16 -l16
+[1.526s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/px4_ros_com': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/px4_ros_com
+[1.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[1.573s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com' for CMake module files
+[1.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/px4_ros_com' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/px4_msgs/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/krac_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/px4_ros_com
+[1.574s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com' for CMake config files
+[1.575s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[1.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[1.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[1.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[1.576s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/lib'
+[1.576s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[1.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[1.576s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[1.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/bin'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/lib/python3.10/site-packages'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/bin'
+[1.577s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[1.577s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.sh'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.bash'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[1.578s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[1.578s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(px4_ros_com)
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com' for CMake module files
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com' for CMake config files
+[1.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'cmake_prefix_path')
+[1.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.ps1'
+[1.579s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.dsv'
+[1.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/cmake_prefix_path.sh'
+[1.581s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/lib'
+[1.581s] Level 1:colcon.colcon_core.shell:create_environment_hook('px4_ros_com', 'ld_library_path_lib')
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.ps1'
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.dsv'
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/hook/ld_library_path_lib.sh'
+[1.581s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/bin'
+[1.581s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/lib/pkgconfig/px4_ros_com.pc'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/lib/python3.10/site-packages'
+[1.582s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/px4_ros_com/bin'
+[1.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.ps1'
+[1.582s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.dsv'
+[1.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.sh'
+[1.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.bash'
+[1.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/px4_ros_com/share/px4_ros_com/package.zsh'
+[1.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/px4_ros_com/share/colcon-core/packages/px4_ros_com)
+[13.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[13.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kch/ros2_ws/build/krac_control': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_control
+[13.138s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_control)
+[13.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_control
+[13.138s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control' for CMake module files
+[13.139s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control' for CMake config files
+[13.139s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_control', 'cmake_prefix_path')
+[13.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_control/share/krac_control/hook/cmake_prefix_path.ps1'
+[13.139s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_control/share/krac_control/hook/cmake_prefix_path.dsv'
+[13.139s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_control/share/krac_control/hook/cmake_prefix_path.sh'
+[13.140s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/lib'
+[13.140s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/bin'
+[13.140s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/lib/pkgconfig/krac_control.pc'
+[13.140s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/lib/python3.10/site-packages'
+[13.140s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/bin'
+[13.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.ps1'
+[13.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.dsv'
+[13.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.sh'
+[13.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.bash'
+[13.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.zsh'
+[13.141s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_control/share/colcon-core/packages/krac_control)
+[13.141s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(krac_control)
+[13.142s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control' for CMake module files
+[13.142s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control' for CMake config files
+[13.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('krac_control', 'cmake_prefix_path')
+[13.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_control/share/krac_control/hook/cmake_prefix_path.ps1'
+[13.142s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kch/ros2_ws/install/krac_control/share/krac_control/hook/cmake_prefix_path.dsv'
+[13.142s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kch/ros2_ws/install/krac_control/share/krac_control/hook/cmake_prefix_path.sh'
+[13.143s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/lib'
+[13.143s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/bin'
+[13.143s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/lib/pkgconfig/krac_control.pc'
+[13.143s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/lib/python3.10/site-packages'
+[13.143s] Level 1:colcon.colcon_core.environment:checking '/home/kch/ros2_ws/install/krac_control/bin'
+[13.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.ps1'
+[13.144s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.dsv'
+[13.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.sh'
+[13.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.bash'
+[13.144s] INFO:colcon.colcon_core.shell:Creating package script '/home/kch/ros2_ws/install/krac_control/share/krac_control/package.zsh'
+[13.145s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kch/ros2_ws/install/krac_control/share/colcon-core/packages/krac_control)
+[13.145s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[13.145s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[13.145s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[13.145s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[13.149s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[13.149s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[13.149s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[13.156s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[13.157s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kch/ros2_ws/install/local_setup.ps1'
+[13.158s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kch/ros2_ws/install/_local_setup_util_ps1.py'
+[13.158s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kch/ros2_ws/install/setup.ps1'
+[13.159s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kch/ros2_ws/install/local_setup.sh'
+[13.161s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kch/ros2_ws/install/_local_setup_util_sh.py'
+[13.161s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kch/ros2_ws/install/setup.sh'
+[13.162s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kch/ros2_ws/install/local_setup.bash'
+[13.162s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kch/ros2_ws/install/setup.bash'
+[13.163s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kch/ros2_ws/install/local_setup.zsh'
+[13.163s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kch/ros2_ws/install/setup.zsh'
