@@ -32,7 +32,14 @@ def generate_launch_description():
             executable='mavros_node',
             name='mavros',
             output='screen',
-            parameters=[os.path.join(config_dir, 'mavros_params.yaml')],
+            # 💡 기존 yaml 파일 뒤에 fcu_url 딕셔너리를 추가하여 터미널 명령어를 그대로 이식합니다.
+            parameters=[
+                os.path.join(config_dir, 'mavros_params.yaml'),
+                {
+                    'fcu_url': 'udp://127.0.0.1:14540@14557',
+                    'gcs_url': 'udp://@127.0.0.1:14550', # QGC 연결용 포트(필요시)
+                }
+            ],
             namespace='mavros',
             remappings=[('/mavros/setpoint_velocity/cmd_vel_unstamped', '/mavros/setpoint_velocity/cmd_vel_unstamped')]
         ),

@@ -1,0 +1,30 @@
+[35m[1mConsolidate compiler generated dependencies of target vtol_fsm[0m
+[ 25%] Built target vtol_fsm_P
+[ 50%] [32mBuilding CXX object CMakeFiles/precision_lander.dir/src/precision_lander.cpp.o[0m
+[ 62%] Built target offboard
+[ 75%] [32mBuilding CXX object CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o[0m
+[ 87%] [32m[1mLinking CXX executable precision_lander[0m
+[ 87%] Built target precision_lander
+[100%] [32m[1mLinking CXX executable vtol_fsm[0m
+[100%] Built target vtol_fsm
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm_P
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/offboard
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/precision_lander
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/package_run_dependencies/krac_control
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/parent_prefix_path/krac_control
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/path.sh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/path.dsv
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.bash
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.sh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.zsh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.dsv
+-- Symlinking: /home/kch/ros2_ws/install/krac_control/share/krac_control/package.dsv
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/packages/krac_control
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/cmake/krac_controlConfig.cmake
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/cmake/krac_controlConfig-version.cmake
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/package.xml

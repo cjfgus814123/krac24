@@ -1,0 +1,32 @@
+[0.031s] Invoking command in '/home/kch/ros2_ws/build/krac_control': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[0.065s] [35m[1mConsolidate compiler generated dependencies of target precision_lander[0m
+[0.075s] [ 25%] Built target vtol_fsm_P
+[0.075s] [ 50%] Built target vtol_fsm
+[0.076s] [ 75%] Built target offboard
+[0.080s] [ 87%] [32mBuilding CXX object CMakeFiles/precision_lander.dir/src/precision_lander.cpp.o[0m
+[7.969s] [100%] [32m[1mLinking CXX executable precision_lander[0m
+[8.384s] [100%] Built target precision_lander
+[8.396s] Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/kch/ros2_ws/build/krac_control -- -j16 -l16
+[8.397s] Invoking command in '/home/kch/ros2_ws/build/krac_control': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_control
+[8.403s] -- Install configuration: ""
+[8.403s] -- Execute custom install script
+[8.403s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm
+[8.403s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm_P
+[8.403s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/offboard
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/lib/krac_control/precision_lander
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/package_run_dependencies/krac_control
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/parent_prefix_path/krac_control
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/ament_prefix_path.sh
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/ament_prefix_path.dsv
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/path.sh
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/environment/path.dsv
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.bash
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.sh
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.zsh
+[8.404s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/local_setup.dsv
+[8.404s] -- Symlinking: /home/kch/ros2_ws/install/krac_control/share/krac_control/package.dsv
+[8.413s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/packages/krac_control
+[8.413s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/cmake/krac_controlConfig.cmake
+[8.413s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/cmake/krac_controlConfig-version.cmake
+[8.413s] -- Up-to-date symlink: /home/kch/ros2_ws/install/krac_control/share/krac_control/package.xml
+[8.415s] Invoked command in '/home/kch/ros2_ws/build/krac_control' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control:/home/kch/ros2_ws/install/krac_vision:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --install /home/kch/ros2_ws/build/krac_control

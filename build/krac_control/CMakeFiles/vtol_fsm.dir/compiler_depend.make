@@ -717,6 +717,11 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__builder.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__traits.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__type_support.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/position_target.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__struct.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__builder.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__traits.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__type_support.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/set_mode.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__struct.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__builder.hpp \
@@ -737,8 +742,35 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__struct.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__builder.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__traits.hpp \
-  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.hpp
+  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__type_support.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp \
+  /usr/include/c++/11/math.h \
+  /usr/include/c++/11/cfloat \
+  /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
+  /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
+  /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp
 
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/11/include/float.h:
+
+/usr/include/c++/11/cfloat:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h:
 
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/set_bool__traits.hpp:
 
@@ -763,6 +795,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__struct.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/set_mode.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__type_support.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__type_support.hpp:
 
@@ -797,6 +831,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose_stamped__struct.hpp:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/pose_stamped.hpp:
 
@@ -890,6 +926,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__traits.hpp:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__builder.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__type_support.hpp:
@@ -919,6 +957,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__builder.hpp:
 
 /opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
 
@@ -1218,6 +1258,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
+/opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h:
+
 /usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/c++/11/bits/basic_string.h:
@@ -1227,6 +1269,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/position_target.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
@@ -1257,6 +1301,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
 
 /usr/include/c++/11/bits/exception_defines.h:
 
@@ -1381,6 +1427,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/c++/11/bits/ios_base.h:
 
 /opt/ros/humble/include/rmw/rmw/message_sequence.h:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:
 
@@ -1770,11 +1818,15 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
+/usr/include/c++/11/math.h:
+
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/network_flow_endpoint.hpp:
 
 /opt/ros/humble/include/rmw/rmw/init_options.h:
+
+/opt/ros/humble/include/tf2/tf2/visibility_control.h:
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
