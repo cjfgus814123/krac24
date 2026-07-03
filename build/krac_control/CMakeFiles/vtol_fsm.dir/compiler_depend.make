@@ -706,6 +706,14 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/nav_sat_fix.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/state.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__struct.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__builder.hpp \
@@ -717,6 +725,13 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__builder.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__traits.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__type_support.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/waypoint_list.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__struct.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint__struct.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__builder.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__traits.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint__traits.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__type_support.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/position_target.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__struct.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__builder.hpp \
@@ -732,6 +747,11 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__builder.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__traits.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__type_support.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/command_long.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__struct.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__builder.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__traits.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__type_support.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/trigger.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp \
@@ -782,6 +802,12 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp:
 
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__type_support.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__struct.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/command_long.hpp:
+
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__type_support.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__traits.hpp:
@@ -798,6 +824,20 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/position_target__type_support.hpp:
 
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__type_support.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint__traits.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__traits.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__builder.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint__struct.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_list__struct.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/waypoint_list.hpp:
+
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__type_support.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__traits.hpp:
@@ -809,6 +849,10 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__builder.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__struct.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/nav_sat_fix.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__type_support.hpp:
 
@@ -1052,6 +1096,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__type_support.hpp:
+
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
@@ -1061,6 +1107,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/c++/11/ratio:
 
 /usr/include/stdio.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
@@ -1073,6 +1121,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/stdlib.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__struct.hpp:
 
 /usr/include/c++/11/string_view:
 
@@ -1232,11 +1282,15 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /usr/include/c++/11/bits/unordered_map.h:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__traits.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
 /usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/c++/11/ext/concurrence.h:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
@@ -1650,6 +1704,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_long__builder.hpp:
+
 /usr/include/c++/11/cwchar:
 
 /usr/include/c++/11/bits/stl_algobase.h:
@@ -1703,6 +1759,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/postypes.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -2157,6 +2215,8 @@ CMakeFiles/vtol_fsm.dir/src/vtol_fsm.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
 

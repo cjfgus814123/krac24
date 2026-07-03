@@ -1,0 +1,25 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/krac_24_sitl.launch.py
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/main_mission.launch.py
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/sitl_vtol.launch.py
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/sitl_x500.launch.py
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/config/mavros_params.yaml
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/config/vtol_params.yaml
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/config/waypoints.yaml
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/ament_index/resource_index/package_run_dependencies/krac_mission
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/ament_index/resource_index/parent_prefix_path/krac_mission
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/path.sh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/environment/path.dsv
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.bash
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.sh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.zsh
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/local_setup.dsv
+-- Symlinking: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.dsv
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/ament_index/resource_index/packages/krac_mission
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/cmake/krac_missionConfig.cmake
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/cmake/krac_missionConfig-version.cmake
+-- Up-to-date symlink: /home/kch/ros2_ws/install/krac_mission/share/krac_mission/package.xml
+-- Up-to-date: /home/kch/ros2_ws/install/krac_mission/lib/krac_mission/mission_loader

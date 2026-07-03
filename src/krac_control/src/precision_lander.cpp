@@ -22,7 +22,7 @@ public:
         enable_srv_ = this->create_service<std_srvs::srv::SetBool>("/precision_lander/enable", std::bind(&PrecisionLander::enable_cb, this, std::placeholders::_1, std::placeholders::_2));
         timer_ = this->create_wall_timer(50ms, std::bind(&PrecisionLander::control_loop, this));
 
-        RCLCPP_INFO(this->get_logger(), "🛬 정밀 착륙(Precision Lander) 노드 가동 완료! (Yaw 정렬 포함)");
+        RCLCPP_INFO(this->get_logger(), "🛬 정밀 착륙(Precision Lander) 가동! (0도/180도 최단거리 정렬 적용)");
     }
 
 private:
@@ -40,20 +40,20 @@ private:
     double sum_x_ = 0.0;
     double sum_y_ = 0.0;
 
-    // 튜닝 파라미터
-    const double KP_XY = 0.5;   
-    const double KI_XY = 0.01;
-    const double KD_XY = 0.1;
-    const double MAX_XY_VEL = 1.0; 
+    // 요동침(Oscillation) 방지를 위해 PID 게인 및 최대 속도 대폭 하향 조정
+    const double KP_XY = 0.25;      // 부드럽게 반응
+    const double KI_XY = 0.005;     
+    const double KD_XY = 0.02;      // 노이즈 증폭 및 떨림 방지
+    const double MAX_XY_VEL = 0.5;  // 급발진 방지
     
-    // 💡 [추가] 헤딩(Yaw) 정렬 파라미터
-    const double KP_YAW = 0.6;         // 회전 민감도 (P 게인)
-    const double MAX_YAW_VEL = 0.4;    // 최대 회전 속도 (rad/s)
+    // 헤딩(Yaw) 정렬 파라미터 (회전 떨림도 방지하기 위해 하향)
+    const double KP_YAW = 0.3;         
+    const double MAX_YAW_VEL = 0.2;    
 
     // 고도 강하 파라미터
-    const double SEARCH_ALTITUDE = 7.0;       // 타겟 탐색을 시작할 목표 고도 (7m)
-    const double BLIND_DESCENT_SPEED = -1.5;  // 타겟 안 보일 때 빠르게 내려갈 속도
-    const double PRECISION_DESCEND_SPEED = -0.4; // 타겟 보일 때 정밀 하강할 속도
+    const double SEARCH_ALTITUDE = 7.0;       
+    const double BLIND_DESCENT_SPEED = -1.5;  
+    const double PRECISION_DESCEND_SPEED = -0.4; 
 
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr vel_pub_;
     rclcpp::Subscription<krac_interfaces::msg::TargetError>::SharedPtr vision_sub_;
@@ -77,7 +77,7 @@ private:
         if (enabled_) {
             sum_x_ = 0.0; sum_y_ = 0.0;
             prev_err_x_ = 0.0; prev_err_y_ = 0.0;
-            RCLCPP_INFO(this->get_logger(), "✅ Lander 상태: ON (하강 및 Yaw 제어 시작)");
+            RCLCPP_INFO(this->get_logger(), "✅ Lander 상태: ON (안정화 제어 시작)");
         } else {
             RCLCPP_INFO(this->get_logger(), "⛔ Lander 상태: OFF");
         }
@@ -89,7 +89,7 @@ private:
         geometry_msgs::msg::Twist vel_cmd;
 
         // =======================================================
-        // 1. 타겟이 보이지 않을 때의 예외 처리 (블라인드 하강 로직)
+        // 1. 타겟이 보이지 않을 때의 예외 처리
         // =======================================================
         if (!vision_err_.is_detected) {
             vel_cmd.linear.x = 0.0;
@@ -99,24 +99,24 @@ private:
             if (current_alt_ > SEARCH_ALTITUDE) {
                 vel_cmd.linear.z = BLIND_DESCENT_SPEED;
                 RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, 
-                    "👀 [Target LOST] 고도 %.1fm -> %.1fm까지 블라인드 고속 하강 중...", current_alt_, SEARCH_ALTITUDE);
+                    "👀 [Target LOST] 고도 %.1fm -> %.1fm까지 고속 하강 중...", current_alt_, SEARCH_ALTITUDE);
             } else {
                 vel_cmd.linear.z = -0.1; 
                 RCLCPP_WARN_THROTTLE(this->get_logger(), *this->get_clock(), 1000, 
-                    "⚠️ [Target LOST] 탐색 고도(%.1fm) 진입. 타겟 수색 중...", current_alt_);
+                    "⚠️ [Target LOST] 타겟 수색 중...");
             }
             vel_pub_->publish(vel_cmd); 
             return;
         }
 
         // =======================================================
-        // 🎯 2. 타겟이 감지되었을 때 (정밀 정렬 및 하강)
+        // 🎯 2. 타겟 감지 시 정밀 정렬 (요동침 방지 적용)
         // =======================================================
-        double alt_factor = std::max(current_alt_, 0.5); // 0으로 나누기 방지
+        double alt_factor = std::max(current_alt_, 0.5); 
         double err_x_m = vision_err_.pixel_err_x * (alt_factor / fx_);
         double err_y_m = vision_err_.pixel_err_y * (alt_factor / fy_);
 
-        // PID 제어 연산 (X, Y 위치)
+        // PID 연산
         sum_x_ = std::clamp(sum_x_ + err_x_m * 0.05, -1.0, 1.0);
         sum_y_ = std::clamp(sum_y_ + err_y_m * 0.05, -1.0, 1.0);
 
@@ -126,25 +126,40 @@ private:
         prev_err_x_ = err_x_m; 
         prev_err_y_ = err_y_m;
 
-        // X, Y 이동 명령 인가
-        vel_cmd.linear.x = std::clamp(v_y, -MAX_XY_VEL, MAX_XY_VEL);
-        vel_cmd.linear.y = std::clamp(v_x, -MAX_XY_VEL, MAX_XY_VEL);
+        // 데드밴드(Deadband): 오차가 10cm 이내면 X, Y 이동 명령을 무시하여 제자리 떨림 방지
+        if (std::abs(err_x_m) < 0.1) v_x = 0.0;
+        if (std::abs(err_y_m) < 0.1) v_y = 0.0;
+
+        // 앞/뒤(X축) 방향 오류 수정을 위해 v_y 앞에 다시 마이너스(-)를 붙임.
+        vel_cmd.linear.x = std::clamp(-v_y, -MAX_XY_VEL, MAX_XY_VEL); // 앞뒤 제어
+        vel_cmd.linear.y = std::clamp(v_x, -MAX_XY_VEL, MAX_XY_VEL);  // 좌우 제어
 
         // =======================================================
-        // 🔄 3. OBB 기반 헤딩(Yaw) 정렬 제어
+        // 🔄 3. OBB 기반 헤딩(Yaw) 0도 또는 180도 최단거리 정렬
         // =======================================================
-        // YOLO의 OBB theta를 0으로 만들도록 드론을 회전시킵니다.
-        // 💡 [주의] 만약 드론이 정렬되지 않고 반대 방향으로 계속 뱅글뱅글 돈다면,
-        // 아래 식에서 KP_YAW 앞에 마이너스(-) 부호를 붙여주시면 됩니다.
-        double yaw_cmd = vision_err_.yaw_err_rad * KP_YAW;
+        double target_yaw_err = vision_err_.yaw_err_rad;
+
+        // 💡 [핵심 추가] 각도 오차를 [-90도, +90도] 구간으로 강제 매핑(래핑)합니다.
+        // 이를 통해 드론이 180도를 빙 돌지 않고, 가장 가까운 직사각형 축으로 바로 맞춥니다.
+        while (target_yaw_err > M_PI / 2.0) {
+            target_yaw_err -= M_PI;
+        }
+        while (target_yaw_err < -M_PI / 2.0) {
+            target_yaw_err += M_PI;
+        }
+
+        double yaw_cmd = target_yaw_err * KP_YAW;
+        
+        // 각도 오차도 3도(약 0.05 rad) 이내면 회전을 멈춰서 요동침 방지
+        if (std::abs(target_yaw_err) < 0.05) yaw_cmd = 0.0;
+        
         vel_cmd.angular.z = std::clamp(yaw_cmd, -MAX_YAW_VEL, MAX_YAW_VEL);
 
         // =======================================================
         // ⬇️ 4. 오차 반경에 따른 강하 속도 조절
         // =======================================================
         double dist_m = std::hypot(err_x_m, err_y_m);
-        // 각도 오차도 로그 출력을 위해 디그리(도) 단위로 변환
-        double yaw_deg = vision_err_.yaw_err_rad * (180.0 / M_PI);
+        double yaw_deg = target_yaw_err * (180.0 / M_PI); // 래핑된 각도 출력
 
         if (dist_m < 0.5) {
             vel_cmd.linear.z = PRECISION_DESCEND_SPEED; 
@@ -153,11 +168,11 @@ private:
         } else if (dist_m < 1.5) {
             vel_cmd.linear.z = PRECISION_DESCEND_SPEED * 0.5;
             RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, 
-                "↘️ [Approaching] 센터 진입 중... (각도 정렬: %.1f도)", yaw_deg);
+                "↘️ [Approaching] 센터 진입 중... (각도: %.1f도)", yaw_deg);
         } else {
             vel_cmd.linear.z = 0.0;
             RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, 
-                "🔄 [Aligning] X/Y/Yaw 오차 수정 중... (현재 오차: %.2fm)", dist_m);
+                "🔄 [Aligning] 센터 맞추기 집중... (현재 오차: %.2fm)", dist_m);
         }
 
         vel_pub_->publish(vel_cmd);

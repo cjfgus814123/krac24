@@ -1,0 +1,106 @@
+[0.007s] Invoking command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kch/ros2_ws/vision_msgs/vision_msgs_rviz_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kch/ros2_ws/install/vision_msgs_rviz_plugins
+[0.035s] -- Found yaml_cpp_vendor: 8.0.2 (/opt/ros/humble/share/yaml_cpp_vendor/cmake)
+[0.037s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.119s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.123s] -- Found rcpputils: 2.4.6 (/opt/ros/humble/share/rcpputils/cmake)
+[0.127s] -- Found rclcpp: 16.0.17 (/opt/ros/humble/share/rclcpp/cmake)
+[0.138s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.139s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.143s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.148s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.154s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.174s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.174s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.263s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.295s] -- Found rclpy: 3.3.19 (/opt/ros/humble/share/rclpy/cmake)
+[0.295s] -- Found pluginlib: 5.1.3 (/opt/ros/humble/share/pluginlib/cmake)
+[0.310s] -- Found rviz_common: 11.2.25 (/opt/ros/humble/share/rviz_common/cmake)
+[0.314s] -- Setting assimp_DIR to: '/opt/ros/humble/share/rviz_assimp_vendor/cmake/../../../opt/rviz_assimp_vendor/lib/cmake/assimp-4.1'
+[0.318s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[0.320s] -- Found OGRE
+[0.320s] --   static     : OFF
+[0.320s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[0.320s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.320s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[0.320s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[0.320s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[0.320s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[0.320s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[0.321s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.321s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[0.321s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.321s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[0.388s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[0.417s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.475s] -- Found rviz_default_plugins: 11.2.25 (/opt/ros/humble/share/rviz_default_plugins/cmake)
+[0.542s] -- Found vision_msgs: 4.1.1 (/home/kch/ros2_ws/install/vision_msgs/share/vision_msgs/cmake)
+[0.555s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.624s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.625s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.626s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/kch/ros2_ws/vision_msgs/vision_msgs_rviz_plugins/include>
+[0.626s] -- Configured cppcheck exclude dirs and/or files: 
+[0.627s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[0.627s] -- Configured cpplint exclude dirs and/or files: 
+[0.627s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.628s] -- Added test 'lint_cmake' to check CMake code style
+[0.628s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.630s] -- Added test 'uncrustify' to check C / C++ code style
+[0.630s] -- Configured uncrustify additional arguments: 
+[0.630s] -- Added test 'xmllint' to check XML markup files
+[0.632s] -- Configuring done
+[0.670s] -- Generating done
+[0.675s] -- Build files have been written to: /home/kch/ros2_ws/build/vision_msgs_rviz_plugins
+[0.687s] Invoked command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins' returned '0': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/kch/ros2_ws/vision_msgs/vision_msgs_rviz_plugins -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/kch/ros2_ws/install/vision_msgs_rviz_plugins
+[0.688s] Invoking command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs_rviz_plugins -- -j16 -l16
+[0.735s] [  6%] [34m[1mAutomatic MOC for target vision_msgs_rviz_plugins[0m
+[0.752s] [  6%] Built target vision_msgs_rviz_plugins_autogen
+[0.770s] [35m[1mConsolidate compiler generated dependencies of target vision_msgs_rviz_plugins[0m
+[0.800s] [100%] Built target vision_msgs_rviz_plugins
+[0.810s] Invoked command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins' returned '0': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/kch/ros2_ws/build/vision_msgs_rviz_plugins -- -j16 -l16
+[0.811s] Invoking command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs_rviz_plugins
+[0.817s] -- Install configuration: ""
+[0.817s] -- Execute custom install script
+[0.817s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins//plugins_description.xml
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/environment/library_path.sh
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/environment/library_path.dsv
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/include/vision_msgs_rviz_plugins/vision_msgs_rviz_plugins/bounding_box_3d.hpp
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/include/vision_msgs_rviz_plugins/vision_msgs_rviz_plugins/bounding_box_3d_array.hpp
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/include/vision_msgs_rviz_plugins/vision_msgs_rviz_plugins/bounding_box_3d_common.hpp
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/include/vision_msgs_rviz_plugins/vision_msgs_rviz_plugins/detection_3d.hpp
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/include/vision_msgs_rviz_plugins/vision_msgs_rviz_plugins/detection_3d_array.hpp
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/include/vision_msgs_rviz_plugins/vision_msgs_rviz_plugins/detection_3d_common.hpp
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/include/vision_msgs_rviz_plugins/vision_msgs_rviz_plugins/visibility_control.hpp
+[0.818s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/launch/test_all.launch.py
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/conf/conf.rviz
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/conf/example.yaml
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/icons/classes/BoundingBox3D.png
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/icons/classes/BoundingBox3DArray.png
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/icons/classes/Detection3D.png
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/icons/classes/Detection3DArray.png
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/vision_msgs_rviz_plugins/Detection3DArray.py
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/vision_msgs_rviz_plugins/Detection3D.py
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/vision_msgs_rviz_plugins/BoundingBox3D.py
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/vision_msgs_rviz_plugins/BoundingBox3DArray.py
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/ament_index/resource_index/package_run_dependencies/vision_msgs_rviz_plugins
+[0.819s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/ament_index/resource_index/parent_prefix_path/vision_msgs_rviz_plugins
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/environment/ament_prefix_path.sh
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/environment/ament_prefix_path.dsv
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/environment/path.sh
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/environment/path.dsv
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/local_setup.bash
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/local_setup.sh
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/local_setup.zsh
+[0.820s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/local_setup.dsv
+[0.820s] -- Symlinking: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.dsv
+[0.828s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/ament_index/resource_index/packages/vision_msgs_rviz_plugins
+[0.829s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/ament_index/resource_index/rviz_common__pluginlib__plugin/vision_msgs_rviz_plugins
+[0.829s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.829s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/ament_cmake_export_targets-extras.cmake
+[0.829s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.829s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/vision_msgs_rviz_pluginsConfig.cmake
+[0.829s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/vision_msgs_rviz_pluginsConfig-version.cmake
+[0.829s] -- Up-to-date symlink: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/package.xml
+[0.830s] -- Up-to-date: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib/libvision_msgs_rviz_plugins.so
+[0.830s] -- Up-to-date: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/vision_msgs_rviz_pluginsExport.cmake
+[0.830s] -- Up-to-date: /home/kch/ros2_ws/install/vision_msgs_rviz_plugins/share/vision_msgs_rviz_plugins/cmake/vision_msgs_rviz_pluginsExport-noconfig.cmake
+[0.832s] Invoked command in '/home/kch/ros2_ws/build/vision_msgs_rviz_plugins' returned '0': AMENT_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/vision_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/kch/ros2_ws/install/vision_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/kch/ros2_ws/install/vision_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/kch/ros2_ws/build/vision_msgs_rviz_plugins

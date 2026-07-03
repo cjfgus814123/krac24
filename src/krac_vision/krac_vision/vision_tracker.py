@@ -3,7 +3,7 @@
 
 import rclpy
 from rclpy.node import Node
-from rclpy.qos import qos_profile_sensor_data  # 💡 [추가됨] 센서 데이터용 QoS 임포트
+from rclpy.qos import qos_profile_sensor_data  
 from sensor_msgs.msg import Image
 from geometry_msgs.msg import PoseStamped, Twist
 from krac_interfaces.msg import TargetError
@@ -18,7 +18,6 @@ class VisionTracker(Node):
         super().__init__('vision_tracker_node')
         self.bridge = CvBridge()
         
-        # 💡 [핵심 수정] 센서와 MAVROS 데이터를 받는 모든 구독자에 qos_profile_sensor_data 적용
         self.image_sub = self.create_subscription(
             Image, '/camera/image_raw', self.image_callback, qos_profile_sensor_data)
         self.pose_sub = self.create_subscription(
@@ -32,9 +31,18 @@ class VisionTracker(Node):
         self.current_alt = 0.0
         self.current_cmd = Twist()
         
-        # OBB 모델 로드
+        # 1. YOLO OBB 모델 로드
         self.model = YOLO('/home/kch/ros2_ws/src/krac_vision/weights/best.pt') 
         
+        # 💡 2. [추가] ArUco 마커 설정 (OpenCV 버전에 따른 호환성 처리)
+        # 일반적으로 버티포트 착륙에는 5x5 사이즈의 마커를 많이 사용합니다.
+        try:
+            self.aruco_dict = cv2.aruco.Dictionary_get(cv2.aruco.DICT_5X5_250)
+            self.aruco_params = cv2.aruco.DetectorParameters_create()
+        except AttributeError:
+            self.aruco_dict = cv2.aruco.getPredefinedDictionary(cv2.aruco.DICT_5X5_250)
+            self.aruco_params = cv2.aruco.DetectorParameters()
+            
         self.img_size = 1024
         self.center_x = self.img_size / 2.0  
         self.center_y = self.img_size / 2.0  
@@ -62,46 +70,97 @@ class VisionTracker(Node):
         resized_img = cv2.resize(cv_image, (self.img_size, self.img_size))
         dbg_img = resized_img.copy()
 
+        # 화면 십자선(Center) 그리기
         cv2.line(dbg_img, (int(self.center_x) - 30, int(self.center_y)), (int(self.center_x) + 30, int(self.center_y)), (0, 255, 0), 2)
         cv2.line(dbg_img, (int(self.center_x), int(self.center_y) - 30), (int(self.center_x), int(self.center_y) + 30), (0, 255, 0), 2)
 
-        results = self.model(resized_img, imgsz=self.img_size, conf=0.6, verbose=False)
         target_msg = TargetError()
         target_msg.is_detected = False
-
+        
         dist_px = 0.0
         theta_val = 0.0
+        tracking_mode = "LOST"
+        
+        best_cx, best_cy, best_theta = 0.0, 0.0, 0.0
+        is_found = False
 
+        # =======================================================
+        # 🔍 1. ArUco 마커 탐지 (우선순위 1순위 - 초정밀)
+        # =======================================================
+        gray_img = cv2.cvtColor(resized_img, cv2.COLOR_BGR2GRAY)
+        try:
+            corners, ids, rejected = cv2.aruco.detectMarkers(gray_img, self.aruco_dict, parameters=self.aruco_params)
+        except AttributeError:
+            detector = cv2.aruco.ArucoDetector(self.aruco_dict, self.aruco_params)
+            corners, ids, rejected = detector.detectMarkers(gray_img)
+
+        if ids is not None and len(ids) > 0:
+            # 첫 번째 발견된 마커를 타겟으로 지정
+            c = corners[0][0] # 4개 모서리: [top_left, top_right, bottom_right, bottom_left]
+            best_cx = np.mean(c[:, 0])
+            best_cy = np.mean(c[:, 1])
+            
+            # 상단 모서리(top_left -> top_right)를 기준으로 회전각(Theta) 도출
+            dx = c[1][0] - c[0][0]
+            dy = c[1][1] - c[0][1]
+            best_theta = math.atan2(dy, dx)
+            
+            is_found = True
+            tracking_mode = f"ArUco (ID: {ids[0][0]})"
+            
+            # 디버그용 폴리곤 및 중심점 그리기 (마젠타 색상)
+            cv2.aruco.drawDetectedMarkers(dbg_img, corners, ids)
+            cv2.circle(dbg_img, (int(best_cx), int(best_cy)), 8, (255, 0, 255), -1)
+
+        # =======================================================
+        # 🔍 2. YOLO OBB 탐지 (우선순위 2순위 - ArUco가 안 보일 때)
+        # =======================================================
+        results = self.model(resized_img, imgsz=self.img_size, conf=0.6, verbose=False)
+        
         if len(results[0].obb) > 0:
             best_obb = results[0].obb[0]
-            cx, cy = float(best_obb.xywhr[0][0]), float(best_obb.xywhr[0][1])
-            theta = float(best_obb.xywhr[0][4]) 
-            theta_val = theta
-
-            if not self.kf_initialized:
-                self.kf.statePre = np.array([[cx], [cy], [0], [0]], np.float32)
-                self.kf.statePost = np.array([[cx], [cy], [0], [0]], np.float32)
-                self.kf_initialized = True
+            yolo_cx, yolo_cy = float(best_obb.xywhr[0][0]), float(best_obb.xywhr[0][1])
+            yolo_theta = float(best_obb.xywhr[0][4])
             
-            measurement = np.array([[np.float32(cx)], [np.float32(cy)]])
-            self.kf.correct(measurement)
-            predicted = self.kf.predict()
-
-            filtered_cx, filtered_cy = predicted[0][0], predicted[1][0]
-            
-            target_msg.pixel_err_x = filtered_cx - self.center_x
-            target_msg.pixel_err_y = self.center_y - filtered_cy 
-            target_msg.yaw_err_rad = theta
-            target_msg.is_detected = True
-
-            dist_px = math.hypot(target_msg.pixel_err_x, target_msg.pixel_err_y)
-            
+            # 디버그용 폴리곤 그리기 (파란색)
             try:
                 obb_pts = best_obb.xyxyxyxy[0].cpu().numpy().astype(int)
                 cv2.polylines(dbg_img, [obb_pts], isClosed=True, color=(255, 0, 0), thickness=2)
             except Exception:
                 pass
+                
+            # 만약 ArUco를 못 찾았다면 YOLO의 좌표를 타겟으로 사용
+            if not is_found:
+                best_cx = yolo_cx
+                best_cy = yolo_cy
+                best_theta = yolo_theta
+                is_found = True
+                tracking_mode = "YOLO (OBB)"
 
+        # =======================================================
+        # 🎯 3. 칼만 필터(Kalman Filter) 업데이트 및 퍼블리시
+        # =======================================================
+        if is_found:
+            if not self.kf_initialized:
+                self.kf.statePre = np.array([[best_cx], [best_cy], [0], [0]], np.float32)
+                self.kf.statePost = np.array([[best_cx], [best_cy], [0], [0]], np.float32)
+                self.kf_initialized = True
+            
+            measurement = np.array([[np.float32(best_cx)], [np.float32(best_cy)]])
+            self.kf.correct(measurement)
+            predicted = self.kf.predict()
+
+            filtered_cx, filtered_cy = predicted[0][0], predicted[1][0]
+            theta_val = best_theta
+            
+            target_msg.pixel_err_x = filtered_cx - self.center_x
+            target_msg.pixel_err_y = self.center_y - filtered_cy 
+            target_msg.yaw_err_rad = theta_val
+            target_msg.is_detected = True
+
+            dist_px = math.hypot(target_msg.pixel_err_x, target_msg.pixel_err_y)
+            
+            # 추적 타겟으로 선 긋기
             t_x, t_y = int(filtered_cx), int(filtered_cy)
             cv2.circle(dbg_img, (t_x, t_y), 6, (0, 0, 255), -1)
             cv2.line(dbg_img, (int(self.center_x), int(self.center_y)), (t_x, t_y), (0, 255, 255), 2)
@@ -119,12 +178,15 @@ class VisionTracker(Node):
 
         self.error_pub.publish(target_msg)
 
+        # =======================================================
+        # 🖥️ 4. HUD (디버그 화면) 텍스트 출력
+        # =======================================================
         status_color = (0, 255, 0) if target_msg.is_detected else (0, 0, 255)
         text_lines = [
-            f"Status: {'DETECTED' if target_msg.is_detected else 'LOST'}",
-            f"Alt (Ground Height): {self.current_alt:.2f} m",
+            f"Tracker: {tracking_mode}",
+            f"Alt (Ground): {self.current_alt:.2f} m",
             f"Center Dist: {dist_px:.1f} px",
-            f"OBB Theta: {theta_val:.3f} rad ({math.degrees(theta_val):.1f} deg)",
+            f"Target Theta: {theta_val:.3f} rad ({math.degrees(theta_val):.1f} deg)",
             f"Cmd_Vel X: {self.current_cmd.linear.x:.2f}, Y: {self.current_cmd.linear.y:.2f}",
             f"Cmd_Vel Z: {self.current_cmd.linear.z:.2f}, Yaw: {self.current_cmd.angular.z:.2f}"
         ]

@@ -1,11 +1,14 @@
 #include <rclcpp/rclcpp.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <geometry_msgs/msg/twist.hpp> 
+#include <sensor_msgs/msg/nav_sat_fix.hpp> // 💡 GPS 구독용
 #include <mavros_msgs/msg/state.hpp>
 #include <mavros_msgs/msg/waypoint_reached.hpp>
+#include <mavros_msgs/msg/waypoint_list.hpp> // 💡 미션 리스트 구독용
 #include <mavros_msgs/msg/position_target.hpp> 
 #include <mavros_msgs/srv/set_mode.hpp>
 #include <mavros_msgs/srv/waypoint_set_current.hpp>
+#include <mavros_msgs/srv/command_long.hpp> 
 #include <std_srvs/srv/trigger.hpp>
 #include <std_srvs/srv/set_bool.hpp> 
 
@@ -14,6 +17,8 @@
 
 #include <chrono>
 #include <algorithm>
+#include <cmath>
+#include <vector>
 
 using namespace std::chrono_literals;
 
@@ -23,7 +28,7 @@ enum MissionPhase {
     PHASE_RESCUE_DESCENT = 1,        
     PHASE_LANDING_AND_GRAB = 2,      
     PHASE_ASCEND_WITH_VICTIM = 3,    
-    PHASE_RESUME_MISSION = 4,        
+    PHASE_ALIGN_HEADING = 4,         // 💡 자동 계산된 목적지를 향해 기수 정렬
     PHASE_VERTIPORT_DESCENT = 5,     
     PHASE_FINAL_LANDING = 6          
 };
@@ -49,16 +54,22 @@ public:
             "mavros/mission/reached", 10, std::bind(&RescueMissionNode::mission_reached_cb, this, std::placeholders::_1));
         local_pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
             "mavros/local_position/pose", qos, std::bind(&RescueMissionNode::local_pose_cb, this, std::placeholders::_1));
+            
+        // 💡 [추가] 현재 글로벌 GPS와 전체 미션(웨이포인트) 리스트를 받아옵니다.
+        global_gps_sub_ = this->create_subscription<sensor_msgs::msg::NavSatFix>(
+            "mavros/global_position/global", qos, std::bind(&RescueMissionNode::gps_cb, this, std::placeholders::_1));
+        waypoints_sub_ = this->create_subscription<mavros_msgs::msg::WaypointList>(
+            "mavros/mission/waypoints", qos, std::bind(&RescueMissionNode::waypoints_cb, this, std::placeholders::_1));
 
         lander_vel_sub_ = this->create_subscription<geometry_msgs::msg::Twist>(
             "/precision_lander/cmd_vel", 10, std::bind(&RescueMissionNode::lander_vel_cb, this, std::placeholders::_1));
 
         vel_setpoint_pub_ = this->create_publisher<geometry_msgs::msg::Twist>("mavros/setpoint_velocity/cmd_vel_unstamped", 10);
-        pos_setpoint_pub_ = this->create_publisher<mavros_msgs::msg::PositionTarget>("mavros/setpoint_raw/local", 10); 
-
+        
         set_mode_client_ = this->create_client<mavros_msgs::srv::SetMode>("mavros/set_mode");
         set_mission_current_client_ = this->create_client<mavros_msgs::srv::WaypointSetCurrent>("mavros/mission/set_current");
         lander_client_ = this->create_client<std_srvs::srv::SetBool>("precision_lander/enable");
+        command_client_ = this->create_client<mavros_msgs::srv::CommandLong>("mavros/cmd/command");
 
         manual_trigger_server_ = this->create_service<std_srvs::srv::Trigger>(
             "cmd/mission_proceed", std::bind(&RescueMissionNode::manual_proceed_cb, this, std::placeholders::_1, std::placeholders::_2));
@@ -67,7 +78,7 @@ public:
         
         RCLCPP_INFO(this->get_logger(), "=========================================");
         RCLCPP_INFO(this->get_logger(), "🛸 KRAC VTOL 프록시 FSM 제어기 가동");
-        RCLCPP_INFO(this->get_logger(), "🔥 [1-Step 수동 트리거 모드] - 파지 후 즉시 자동 복귀");
+        RCLCPP_INFO(this->get_logger(), "🔥 [목적지 오토 에임(Auto-Aim) 및 강제 천이] 탑재 완료");
         RCLCPP_INFO(this->get_logger(), "=========================================");
     }
 
@@ -76,9 +87,11 @@ private:
     MissionPhase next_phase_after_prep_ = PHASE_MISSION_FLYING; 
     
     int offboard_prep_counter_ = 0; 
+    int align_counter_ = 0; 
     bool offboard_enabled_ = false; 
     int last_processed_wp_ = -1; 
     double current_yaw_ = 0.0;   
+    double target_yaw_rad_ = 0.0; // 💡 자동 계산된 다음 웨이포인트 방향
 
     int rescue_wp_seq_, resume_wp_seq_, landing_wp_seq_;
     double safe_ascend_alt_;
@@ -89,29 +102,33 @@ private:
     geometry_msgs::msg::Twist latest_lander_vel_; 
     rclcpp::Time last_lander_vel_time_;
 
+    // 💡 [추가] GPS 및 웨이포인트 저장 변수
+    sensor_msgs::msg::NavSatFix current_gps_;
+    std::vector<mavros_msgs::msg::Waypoint> wp_list_;
+
     rclcpp::Subscription<mavros_msgs::msg::State>::SharedPtr state_sub_;
     rclcpp::Subscription<mavros_msgs::msg::WaypointReached>::SharedPtr mission_reached_sub_;
     rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr local_pose_sub_;
+    rclcpp::Subscription<sensor_msgs::msg::NavSatFix>::SharedPtr global_gps_sub_;
+    rclcpp::Subscription<mavros_msgs::msg::WaypointList>::SharedPtr waypoints_sub_;
     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr lander_vel_sub_; 
+    
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr vel_setpoint_pub_;
-    rclcpp::Publisher<mavros_msgs::msg::PositionTarget>::SharedPtr pos_setpoint_pub_;
 
     rclcpp::Client<mavros_msgs::srv::SetMode>::SharedPtr set_mode_client_;
     rclcpp::Client<mavros_msgs::srv::WaypointSetCurrent>::SharedPtr set_mission_current_client_;
     rclcpp::Client<std_srvs::srv::SetBool>::SharedPtr lander_client_;
+    rclcpp::Client<mavros_msgs::srv::CommandLong>::SharedPtr command_client_; 
     rclcpp::Service<std_srvs::srv::Trigger>::SharedPtr manual_trigger_server_;
     rclcpp::TimerBase::SharedPtr timer_;
 
     void state_cb(const mavros_msgs::msg::State::SharedPtr msg) { current_state_ = *msg; }
+    void gps_cb(const sensor_msgs::msg::NavSatFix::SharedPtr msg) { current_gps_ = *msg; }
+    void waypoints_cb(const mavros_msgs::msg::WaypointList::SharedPtr msg) { wp_list_ = msg->waypoints; }
     
     void local_pose_cb(const geometry_msgs::msg::PoseStamped::SharedPtr msg) { 
         current_local_pose_ = *msg; 
-        
-        tf2::Quaternion q(
-            msg->pose.orientation.x,
-            msg->pose.orientation.y,
-            msg->pose.orientation.z,
-            msg->pose.orientation.w);
+        tf2::Quaternion q(msg->pose.orientation.x, msg->pose.orientation.y, msg->pose.orientation.z, msg->pose.orientation.w);
         tf2::Matrix3x3 m(q);
         double roll, pitch;
         m.getRPY(roll, pitch, current_yaw_);
@@ -149,14 +166,14 @@ private:
         RCLCPP_INFO(this->get_logger(), "🎯 Waypoint Reached: [WP %d]", msg->wp_seq);
 
         if (msg->wp_seq == rescue_wp_seq_) { 
-            RCLCPP_WARN(this->get_logger(), "🚨 구조 WP(%d번) 도달! 강력한 오프보드 탈환 루틴 가동.", rescue_wp_seq_);
+            RCLCPP_WARN(this->get_logger(), "🚨 구조 WP(%d번) 도달! 오프보드 강제 진입.", rescue_wp_seq_);
             offboard_enabled_ = true;
             offboard_prep_counter_ = 0;
             next_phase_after_prep_ = PHASE_RESCUE_DESCENT;
             current_phase_ = PHASE_PREPARE_OFFBOARD;
         } 
         else if (msg->wp_seq == landing_wp_seq_) { 
-            RCLCPP_WARN(this->get_logger(), "🛬 버티포트(%d번) 도달! 강력한 오프보드 탈환 루틴 가동.", landing_wp_seq_);
+            RCLCPP_WARN(this->get_logger(), "🛬 버티포트(%d번) 도달! 오프보드 강제 진입.", landing_wp_seq_);
             offboard_enabled_ = true;
             offboard_prep_counter_ = 0;
             next_phase_after_prep_ = PHASE_VERTIPORT_DESCENT;
@@ -167,21 +184,11 @@ private:
     void control_loop() {
         if (current_phase_ == PHASE_MISSION_FLYING) return;
 
-        if (offboard_enabled_ && current_state_.mode != "OFFBOARD" && 
-            current_phase_ != PHASE_RESUME_MISSION && 
-            current_phase_ != PHASE_FINAL_LANDING) 
+        if (offboard_enabled_ && current_state_.mode != "OFFBOARD" && current_phase_ != PHASE_FINAL_LANDING) 
         {
             switch_to_offboard();
-
             geometry_msgs::msg::Twist hold_cmd;
-            hold_cmd.linear.x = 0.0; hold_cmd.linear.y = 0.0; hold_cmd.linear.z = 0.0;
-            hold_cmd.angular.z = 0.0;
-            
             vel_setpoint_pub_->publish(hold_cmd);
-
-            RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 1000, 
-                "⚠️ [OFFBOARD 대기 중] 현재 모드: %s | Twist 셋포인트 스트리밍으로 승인 강제 중...", 
-                current_state_.mode.c_str());
             return; 
         }
 
@@ -211,7 +218,7 @@ private:
                 
                 if (current_phase_ == PHASE_RESCUE_DESCENT && current_local_pose_.pose.position.z < 0.4) {
                     set_precision_lander(false);
-                    manual_ok_ = false; // 서비스콜 대기를 위해 초기화
+                    manual_ok_ = false; 
                     current_phase_ = PHASE_LANDING_AND_GRAB;
                 } else if (current_phase_ == PHASE_VERTIPORT_DESCENT && current_local_pose_.pose.position.z < 0.25) {
                     set_precision_lander(false);
@@ -224,7 +231,7 @@ private:
                 vel_cmd.linear.x = 0.0; vel_cmd.linear.y = 0.0; vel_cmd.linear.z = -0.2; vel_cmd.angular.z = 0.0;
                 
                 RCLCPP_INFO_THROTTLE(this->get_logger(), *this->get_clock(), 2000, 
-                    "⏳ [수동 개입 대기] 바구니 안착 완료. 파지 후 '이륙 서비스 콜'을 전송해주세요.");
+                    "⏳ [수동 개입 대기] 파지 후 '이륙 서비스 콜'을 전송해주세요.");
 
                 if (manual_ok_) {
                     manual_ok_ = false;
@@ -236,27 +243,89 @@ private:
                 publish_vel = true;
                 vel_cmd.linear.x = 0.0; vel_cmd.linear.y = 0.0; vel_cmd.linear.z = 1.2; vel_cmd.angular.z = 0.0; 
 
-                // 💡 [수정됨] 30m 도달 시 즉각적으로 미션 모드 복귀(출발)
                 if (current_local_pose_.pose.position.z >= safe_ascend_alt_) {
-                    RCLCPP_INFO(this->get_logger(), "📌 안전 고도(30m) 도달 완료. 즉시 미션 모드로 복귀합니다.");
-                    current_phase_ = PHASE_RESUME_MISSION;
+                    // =========================================================================
+                    // 💡 [핵심] 30m 도달 시점: 다음 웨이포인트(실제 목적지)를 찾아 방위각을 자동 계산합니다!
+                    // =========================================================================
+                    target_yaw_rad_ = current_yaw_; // 기본값(실패 시 현재 유지)
+                    
+                    // 💡 컴파일 경고 방지를 위해 size_t로 형변환하여 비교합니다.
+                    if (!wp_list_.empty() && static_cast<size_t>(resume_wp_seq_) < wp_list_.size()) {
+                        size_t search_seq = resume_wp_seq_; // 💡 int 대신 size_t 사용
+                        
+                        // 천이 명령(3000번) 등 좌표가 없는 커맨드는 건너뛰고 진짜 다음 좌표를 찾습니다.
+                        while (search_seq < wp_list_.size() && (wp_list_[search_seq].command == 3000 || wp_list_[search_seq].x_lat == 0.0)) {
+                            search_seq++;
+                        }
+
+                        if (search_seq < wp_list_.size()) {
+                            double lat1 = current_gps_.latitude * M_PI / 180.0;
+                            double lon1 = current_gps_.longitude * M_PI / 180.0;
+                            double lat2 = wp_list_[search_seq].x_lat * M_PI / 180.0;
+                            double lon2 = wp_list_[search_seq].y_long * M_PI / 180.0;
+
+                            // Haversine 기반 방위각(Bearing) 도출
+                            double dLon = lon2 - lon1;
+                            double y = sin(dLon) * cos(lat2);
+                            double x = cos(lat1) * sin(lat2) - sin(lat1) * cos(lat2) * cos(dLon);
+                            double bearing = atan2(y, x); // 북쪽 기준 (North=0, CW)
+
+                            // MAVROS 로컬 좌표계(ENU: 동쪽=0, CCW)로 변환
+                            target_yaw_rad_ = -bearing + (M_PI / 2.0);
+                            
+                            // 각도 정규화 [-pi, pi]
+                            while (target_yaw_rad_ > M_PI) target_yaw_rad_ -= 2.0 * M_PI;
+                            while (target_yaw_rad_ < -M_PI) target_yaw_rad_ += 2.0 * M_PI;
+
+                            RCLCPP_INFO(this->get_logger(), "📌 다음 목적지(WP %zu) 탐색 완료! 목표 헤딩(%.1f도)으로 기수를 자동 조준합니다.", 
+                                        search_seq, target_yaw_rad_ * 180.0 / M_PI);
+                        }
+                    }
+
+                    align_counter_ = 0;
+                    current_phase_ = PHASE_ALIGN_HEADING;
                 }
                 break;
 
-            case PHASE_RESUME_MISSION:
+            case PHASE_ALIGN_HEADING:
                 {
-                    auto wp_req = std::make_shared<mavros_msgs::srv::WaypointSetCurrent::Request>();
-                    wp_req->wp_seq = resume_wp_seq_;
-                    set_mission_current_client_->async_send_request(wp_req);
+                    publish_vel = true;
+                    align_counter_++;
 
-                    auto mode_req = std::make_shared<mavros_msgs::srv::SetMode::Request>();
-                    mode_req->custom_mode = "AUTO.MISSION";
-                    set_mode_client_->async_send_request(mode_req);
+                    // 계산해둔 target_yaw_rad_를 향해 최단 거리로 회전
+                    double yaw_err = target_yaw_rad_ - current_yaw_;
+                    while (yaw_err > M_PI)  yaw_err -= 2.0 * M_PI;
+                    while (yaw_err < -M_PI) yaw_err += 2.0 * M_PI;
+
+                    // X, Y, Z 이동 차단, 제자리 회전만 수행
+                    vel_cmd.linear.x = 0.0; vel_cmd.linear.y = 0.0; vel_cmd.linear.z = 0.0; 
+                    vel_cmd.angular.z = std::clamp(yaw_err * 0.8, -0.5, 0.5); 
+
+                    if (align_counter_ % 20 == 0) {
+                        RCLCPP_INFO(this->get_logger(), "🔄 [자동 조준 중] 남은 오차: %.1f도", std::abs(yaw_err * 180.0 / M_PI));
+                    }
                     
-                    RCLCPP_INFO(this->get_logger(), "🔄 [모드 복귀] AUTO.MISSION 전환 및 WP %d 점프 완수.", resume_wp_seq_);
-                    
-                    offboard_enabled_ = false; 
-                    current_phase_ = PHASE_MISSION_FLYING;
+                    // 정확히 4.0초 대기 (충분한 회전 시간 확보)
+                    if (align_counter_ >= 80) {
+                        RCLCPP_WARN(this->get_logger(), "✈️ 기수 정렬 완벽. 고정익(FW) 강제 천이 커맨드 발사!");
+                        
+                        auto wp_req = std::make_shared<mavros_msgs::srv::WaypointSetCurrent::Request>();
+                        wp_req->wp_seq = resume_wp_seq_;
+                        set_mission_current_client_->async_send_request(wp_req);
+
+                        // 고정익 강제 천이 발동 (Command 3000, Param 4)
+                        auto transition_req = std::make_shared<mavros_msgs::srv::CommandLong::Request>();
+                        transition_req->command = 3000;  
+                        transition_req->param1 = 4.0;    
+                        command_client_->async_send_request(transition_req);
+                        
+                        auto mode_req = std::make_shared<mavros_msgs::srv::SetMode::Request>();
+                        mode_req->custom_mode = "AUTO.MISSION";
+                        set_mode_client_->async_send_request(mode_req);
+                        
+                        offboard_enabled_ = false; 
+                        current_phase_ = PHASE_MISSION_FLYING;
+                    }
                 }
                 break;
 
