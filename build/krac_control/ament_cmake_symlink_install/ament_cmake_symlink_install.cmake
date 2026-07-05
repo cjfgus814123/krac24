@@ -313,6 +313,9 @@ message(STATUS "Execute custom install script")
 # install("TARGETS" "vtol_fsm" "vtol_fsm_P" "offboard" "precision_lander" "DESTINATION" "lib/krac_control")
 include("/home/kch/ros2_ws/build/krac_control/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
+# install(PROGRAMS "src/gripper_test.py" "DESTINATION" "lib/krac_control")
+ament_cmake_symlink_install_programs("/home/kch/ros2_ws/src/krac_control" PROGRAMS "src/gripper_test.py" "DESTINATION" "lib/krac_control")
+
 # install(FILES "/home/kch/ros2_ws/build/krac_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/krac_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/home/kch/ros2_ws/src/krac_control" FILES "/home/kch/ros2_ws/build/krac_control/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/krac_control" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 

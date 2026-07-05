@@ -5,7 +5,7 @@ set(krac_control_BUILD_DEPENDS "rclcpp" "mavros_msgs" "geometry_msgs" "std_msgs"
 set(krac_control_BUILDTOOL_DEPENDS "ament_cmake")
 set(krac_control_BUILD_EXPORT_DEPENDS "rclcpp" "mavros_msgs" "geometry_msgs" "std_msgs" "sensor_msgs" "krac_interfaces" "tf2" "tf2_geometry_msgs" "std_srvs")
 set(krac_control_BUILDTOOL_EXPORT_DEPENDS )
-set(krac_control_EXEC_DEPENDS "rclcpp" "mavros_msgs" "geometry_msgs" "std_msgs" "sensor_msgs" "krac_interfaces" "tf2" "tf2_geometry_msgs" "std_srvs")
+set(krac_control_EXEC_DEPENDS "rclpy" "rclcpp" "mavros_msgs" "geometry_msgs" "std_msgs" "sensor_msgs" "krac_interfaces" "tf2" "tf2_geometry_msgs" "std_srvs")
 set(krac_control_TEST_DEPENDS "ament_lint_auto" "ament_lint_common")
 set(krac_control_GROUP_DEPENDS )
 set(krac_control_MEMBER_OF_GROUPS )

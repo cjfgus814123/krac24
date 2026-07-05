@@ -51,7 +51,10 @@ install(TARGETS
   precision_lander
   DESTINATION lib/${PROJECT_NAME}
 )
-
+install(PROGRAMS
+  src/gripper_test.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 
 ament_package()

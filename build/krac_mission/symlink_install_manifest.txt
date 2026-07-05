@@ -1,3 +1,4 @@
+/home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/krac_24.launch.py
 /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/krac_24_sitl.launch.py
 /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/main_mission.launch.py
 /home/kch/ros2_ws/install/krac_mission/share/krac_mission/launch/sitl_vtol.launch.py

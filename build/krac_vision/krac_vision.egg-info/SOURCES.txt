@@ -9,6 +9,7 @@ setup.py
 ../../build/krac_vision/krac_vision.egg-info/top_level.txt
 ../../build/krac_vision/krac_vision.egg-info/zip-safe
 krac_vision/__init__.py
+krac_vision/gripper_test.py
 krac_vision/landing_marker.py
 krac_vision/survivor_yolo.py
 krac_vision/vision_tracker.py
