@@ -4,6 +4,3 @@ source;share/krac_vision/hook/pythonpath.sh
 source;share/krac_vision/hook/ament_prefix_path.ps1
 source;share/krac_vision/hook/ament_prefix_path.dsv
 source;share/krac_vision/hook/ament_prefix_path.sh
-source;../../build/krac_vision/share/krac_vision/hook/pythonpath_develop.ps1
-source;../../build/krac_vision/share/krac_vision/hook/pythonpath_develop.dsv
-source;../../build/krac_vision/share/krac_vision/hook/pythonpath_develop.sh

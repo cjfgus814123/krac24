@@ -1,0 +1,21 @@
+[0.589s] Invoking command in '/home/kch/ros2_ws/src/krac_vision': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/krac_vision build --build-base /home/kch/ros2_ws/build/krac_vision/build install --record /home/kch/ros2_ws/build/krac_vision/install.log --single-version-externally-managed install_data
+[0.773s] running egg_info
+[0.773s] writing ../../build/krac_vision/krac_vision.egg-info/PKG-INFO
+[0.774s] writing dependency_links to ../../build/krac_vision/krac_vision.egg-info/dependency_links.txt
+[0.774s] writing entry points to ../../build/krac_vision/krac_vision.egg-info/entry_points.txt
+[0.774s] writing requirements to ../../build/krac_vision/krac_vision.egg-info/requires.txt
+[0.774s] writing top-level names to ../../build/krac_vision/krac_vision.egg-info/top_level.txt
+[0.776s] reading manifest file '../../build/krac_vision/krac_vision.egg-info/SOURCES.txt'
+[0.776s] writing manifest file '../../build/krac_vision/krac_vision.egg-info/SOURCES.txt'
+[0.776s] running build
+[0.776s] running build_py
+[0.776s] running install
+[0.777s] running install_lib
+[0.778s] running install_data
+[0.778s] running install_egg_info
+[0.779s] removing '/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages/krac_vision-0.0.0-py3.10.egg-info' (and everything under it)
+[0.780s] Copying ../../build/krac_vision/krac_vision.egg-info to /home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages/krac_vision-0.0.0-py3.10.egg-info
+[0.780s] running install_scripts
+[0.797s] Installing vision_tracker script to /home/kch/ros2_ws/install/krac_vision/lib/krac_vision
+[0.797s] writing list of installed files to '/home/kch/ros2_ws/build/krac_vision/install.log'
+[0.826s] Invoked command in '/home/kch/ros2_ws/src/krac_vision' returned '0': CMAKE_PREFIX_PATH=/home/kch/ros2_ws/install/krac_interfaces:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins:/home/kch/ros2_ws/install/vision_msgs:/home/kch/ros2_ws/install/px4_ros_com:/home/kch/ros2_ws/install/px4_msgs:/home/kch/ros2_ws/install/krac_utils:/home/kch/ros2_ws/install/krac_mission:/home/kch/ros2_ws/install/krac_control LD_LIBRARY_PATH=/home/kch/ros2_ws/install/krac_interfaces/lib:/home/kch/ros2_ws/install/vision_msgs_rviz_plugins/lib:/home/kch/ros2_ws/install/vision_msgs/lib:/home/kch/ros2_ws/install/px4_ros_com/lib:/home/kch/ros2_ws/install/px4_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/kch/ros2_ws/build/krac_vision/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/kch/ros2_ws/install/krac_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/krac_vision build --build-base /home/kch/ros2_ws/build/krac_vision/build install --record /home/kch/ros2_ws/build/krac_vision/install.log --single-version-externally-managed install_data
