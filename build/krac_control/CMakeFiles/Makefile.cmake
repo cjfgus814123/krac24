@@ -963,4 +963,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/vtol_fsm_P.dir/DependInfo.cmake"
   "CMakeFiles/offboard.dir/DependInfo.cmake"
   "CMakeFiles/precision_lander.dir/DependInfo.cmake"
+  "CMakeFiles/vtol_offboard.dir/DependInfo.cmake"
   )

@@ -2,6 +2,7 @@
 /home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_fsm_P
 /home/kch/ros2_ws/install/krac_control/lib/krac_control/offboard
 /home/kch/ros2_ws/install/krac_control/lib/krac_control/precision_lander
+/home/kch/ros2_ws/install/krac_control/lib/krac_control/vtol_offboard
 /home/kch/ros2_ws/install/krac_control/lib/krac_control/gripper_test.py
 /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/package_run_dependencies/krac_control
 /home/kch/ros2_ws/install/krac_control/share/ament_index/resource_index/parent_prefix_path/krac_control

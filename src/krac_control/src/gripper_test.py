@@ -11,9 +11,9 @@ class GripperController(Node):
         # 기체 이름(standard_vtol_0)에 맞게 퍼블리셔 생성
         # servo_4: 그리퍼 Z축 회전
         # servo_5, servo_6: 왼쪽/오른쪽 그리퍼 손가락
-        self.pub_s4 = self.create_publisher(Float64, '/model/standard_vtol_0/servo_4', 10)
-        self.pub_s5 = self.create_publisher(Float64, '/model/standard_vtol_0/servo_5', 10)
-        self.pub_s6 = self.create_publisher(Float64, '/model/standard_vtol_0/servo_6', 10)
+        self.pub_s4 = self.create_publisher(Float64, '/model/amsr_vtol_0/servo_4', 10)
+        self.pub_s5 = self.create_publisher(Float64, '/model/amsr_vtol_0/servo_5', 10)
+        self.pub_s6 = self.create_publisher(Float64, '/model/amsr_vtol_0/servo_6', 10)
         
         self.get_logger().info('그리퍼 제어 노드 준비 완료! (Bridge가 켜져 있어야 합니다)')
 

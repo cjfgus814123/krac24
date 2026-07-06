@@ -4,6 +4,7 @@
 /home/kch/ros2_ws/build/krac_control/CMakeFiles/vtol_fsm_P.dir
 /home/kch/ros2_ws/build/krac_control/CMakeFiles/offboard.dir
 /home/kch/ros2_ws/build/krac_control/CMakeFiles/precision_lander.dir
+/home/kch/ros2_ws/build/krac_control/CMakeFiles/vtol_offboard.dir
 /home/kch/ros2_ws/build/krac_control/CMakeFiles/test.dir
 /home/kch/ros2_ws/build/krac_control/CMakeFiles/edit_cache.dir
 /home/kch/ros2_ws/build/krac_control/CMakeFiles/rebuild_cache.dir

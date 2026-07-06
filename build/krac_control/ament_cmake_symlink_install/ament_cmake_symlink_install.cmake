@@ -310,7 +310,7 @@ message(STATUS "Execute custom install script")
 
 # begin of custom install code
 
-# install("TARGETS" "vtol_fsm" "vtol_fsm_P" "offboard" "precision_lander" "DESTINATION" "lib/krac_control")
+# install("TARGETS" "vtol_fsm" "vtol_fsm_P" "offboard" "precision_lander" "vtol_offboard" "DESTINATION" "lib/krac_control")
 include("/home/kch/ros2_ws/build/krac_control/ament_cmake_symlink_install_targets_0_${CMAKE_INSTALL_CONFIG_NAME}.cmake")
 
 # install(PROGRAMS "src/gripper_test.py" "DESTINATION" "lib/krac_control")

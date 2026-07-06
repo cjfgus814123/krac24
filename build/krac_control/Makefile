@@ -249,6 +249,19 @@ precision_lander/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/precision_lander.dir/build.make CMakeFiles/precision_lander.dir/build
 .PHONY : precision_lander/fast
 
+#=============================================================================
+# Target rules for targets named vtol_offboard
+
+# Build rule for target.
+vtol_offboard: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vtol_offboard
+.PHONY : vtol_offboard
+
+# fast build rule for target.
+vtol_offboard/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vtol_offboard.dir/build.make CMakeFiles/vtol_offboard.dir/build
+.PHONY : vtol_offboard/fast
+
 src/offboard.o: src/offboard.cpp.o
 .PHONY : src/offboard.o
 
@@ -345,6 +358,30 @@ src/vtol_fsm_P.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vtol_fsm_P.dir/build.make CMakeFiles/vtol_fsm_P.dir/src/vtol_fsm_P.cpp.s
 .PHONY : src/vtol_fsm_P.cpp.s
 
+src/vtol_offboard.o: src/vtol_offboard.cpp.o
+.PHONY : src/vtol_offboard.o
+
+# target to build an object file
+src/vtol_offboard.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vtol_offboard.dir/build.make CMakeFiles/vtol_offboard.dir/src/vtol_offboard.cpp.o
+.PHONY : src/vtol_offboard.cpp.o
+
+src/vtol_offboard.i: src/vtol_offboard.cpp.i
+.PHONY : src/vtol_offboard.i
+
+# target to preprocess a source file
+src/vtol_offboard.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vtol_offboard.dir/build.make CMakeFiles/vtol_offboard.dir/src/vtol_offboard.cpp.i
+.PHONY : src/vtol_offboard.cpp.i
+
+src/vtol_offboard.s: src/vtol_offboard.cpp.s
+.PHONY : src/vtol_offboard.s
+
+# target to generate assembly for a file
+src/vtol_offboard.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/vtol_offboard.dir/build.make CMakeFiles/vtol_offboard.dir/src/vtol_offboard.cpp.s
+.PHONY : src/vtol_offboard.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -364,6 +401,7 @@ help:
 	@echo "... precision_lander"
 	@echo "... vtol_fsm"
 	@echo "... vtol_fsm_P"
+	@echo "... vtol_offboard"
 	@echo "... src/offboard.o"
 	@echo "... src/offboard.i"
 	@echo "... src/offboard.s"
@@ -376,6 +414,9 @@ help:
 	@echo "... src/vtol_fsm_P.o"
 	@echo "... src/vtol_fsm_P.i"
 	@echo "... src/vtol_fsm_P.s"
+	@echo "... src/vtol_offboard.o"
+	@echo "... src/vtol_offboard.i"
+	@echo "... src/vtol_offboard.s"
 .PHONY : help
 
 

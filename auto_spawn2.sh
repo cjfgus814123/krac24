@@ -39,15 +39,15 @@ echo ">> (2/3) Spawning Box at Rescue Point..."
 gz service -s /world/$WORLD_NAME/create \
 --reqtype gz.msgs.EntityFactory \
 --reptype gz.msgs.Boolean \
---req "sdf_filename: \"file://$MODEL_ROOT/box/model.sdf\" name: \"rescue_box\" pose: {position: {x: $RX, y: $RY, z: 0.1}}"
+--req "sdf_filename: \"file://$MODEL_ROOT/box/model.sdf\" name: \"rescue_box\" pose: {position: {x: $RX, y: $RY, z: 0.5}}"
 
 sleep 1
 
-# (3) Victim (조난자 사람 모델)
-echo ">> (3/3) Spawning Victim at Rescue Point..."
+# (3) 초록배경
+echo ">> (3/3) Spawning Background at Rescue Point..."
 gz service -s /world/$WORLD_NAME/create \
 --reqtype gz.msgs.EntityFactory \
 --reptype gz.msgs.Boolean \
---req "sdf_filename: \"file://$MODEL_ROOT/victim/model.sdf\" name: \"victim\" pose: {position: {x: $VX, y: $VY, z: 0.2}}"
+--req "sdf_filename: \"file://$MODEL_ROOT/land_marker/model.sdf\" name: \"rescue_background\" pose: {position: {x: $VX, y: $VY, z: 0.0}}"
 
 echo "=== [완료] 스폰 작업이 끝났습니다. ==="

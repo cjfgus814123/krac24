@@ -43,12 +43,16 @@ ament_target_dependencies(offboard ${CONTROL_DEPENDENCIES})
 add_executable(precision_lander src/precision_lander.cpp)
 ament_target_dependencies(precision_lander ${CONTROL_DEPENDENCIES})
 
+add_executable(vtol_offboard src/vtol_offboard.cpp)
+ament_target_dependencies(vtol_offboard ${CONTROL_DEPENDENCIES})
+
 # 설치 설정
 install(TARGETS 
   vtol_fsm 
   vtol_fsm_P 
   offboard
   precision_lander
+  vtol_offboard
   DESTINATION lib/${PROJECT_NAME}
 )
 install(PROGRAMS
