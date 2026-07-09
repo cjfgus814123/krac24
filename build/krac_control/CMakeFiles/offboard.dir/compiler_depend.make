@@ -709,35 +709,27 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp \
   /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/nav_sat_fix.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__struct.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__struct.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__builder.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__traits.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__type_support.hpp \
-  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/state.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__struct.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__builder.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__traits.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__type_support.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/global_position_target.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__struct.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__builder.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__traits.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__type_support.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/waypoint_reached.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__struct.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__builder.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__traits.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__type_support.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/set_mode.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__struct.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__builder.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__traits.hpp \
   /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__type_support.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/command_bool.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__struct.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__builder.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__traits.hpp \
-  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__type_support.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/waypoint_set_current.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__struct.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__builder.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__traits.hpp \
+  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__type_support.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/trigger.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp \
   /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp \
@@ -766,29 +758,31 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__struct.hpp:
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__type_support.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__traits.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/waypoint_set_current.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__type_support.hpp:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__traits.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__struct.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/set_mode.hpp:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__traits.hpp:
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__type_support.hpp:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__builder.hpp:
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__traits.hpp:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/global_position_target.hpp:
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__builder.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__traits.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__builder.hpp:
 
 /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__struct.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__struct.hpp:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/nav_sat_fix.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp:
 
@@ -875,8 +869,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_executor_entities_collector.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/static_single_threaded_executor.hpp:
-
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface_traits.hpp:
 
@@ -1030,8 +1022,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__type_support.hpp:
-
 /usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/stl_multiset.h:
@@ -1040,11 +1030,7 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /usr/include/c++/11/ratio:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/command_bool.hpp:
-
 /usr/include/stdio.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_type_support_decl.hpp:
 
@@ -1057,8 +1043,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
 /usr/include/stdlib.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__struct.hpp:
 
 /usr/include/c++/11/string_view:
 
@@ -1211,8 +1195,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_deleter.hpp:
 
 /usr/include/c++/11/bits/unordered_map.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__traits.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -1450,8 +1432,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /usr/include/c++/11/bits/std_function.h:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__traits.hpp:
-
 /usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -1525,6 +1505,8 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
 
 /usr/include/c++/11/bits/unique_ptr.h:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__builder.hpp:
 
 /usr/include/c++/11/bits/stl_relops.h:
 
@@ -1636,8 +1618,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/rclcpp/rclcpp/serialized_message.hpp:
 
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__type_support.hpp:
-
 /usr/include/c++/11/backward/auto_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
@@ -1681,8 +1661,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/c++/11/bits/postypes.h:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__builder.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
@@ -1728,13 +1706,13 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /usr/include/c++/11/bits/locale_classes.tcc:
 
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__struct.hpp:
+
 /usr/include/c++/11/streambuf:
 
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/11/bits/streambuf.tcc:
-
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__builder.hpp:
 
 /usr/include/string.h:
 
@@ -1822,6 +1800,8 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/rmw/rmw/ret_types.h:
 
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/waypoint_reached.hpp:
+
 /usr/include/c++/11/bits/stream_iterator.h:
 
 /opt/ros/humble/include/rcl/rcl/log_level.h:
@@ -1837,8 +1817,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/rmw/rmw/impl/cpp/demangle.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/snprintf.h:
-
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__traits.hpp:
 
 /opt/ros/humble/include/rcutils/rcutils/time.h:
 
@@ -1979,8 +1957,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /opt/ros/humble/include/rcpputils/rcpputils/scope_exit.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
-
-/opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__struct.hpp:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
@@ -2144,8 +2120,6 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__traits.hpp:
-
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
@@ -2215,6 +2189,8 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o: /home/kch/ros2_ws/src/krac_control/s
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__struct.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
 

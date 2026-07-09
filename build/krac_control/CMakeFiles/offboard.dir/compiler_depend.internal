@@ -710,35 +710,27 @@ CMakeFiles/offboard.dir/src/offboard.cpp.o
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/point.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__builder.hpp
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__type_support.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/nav_sat_fix.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__struct.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__struct.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__builder.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__traits.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_status__traits.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/nav_sat_fix__type_support.hpp
- /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/state.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__struct.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__builder.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__traits.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/state__type_support.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/global_position_target.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__struct.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__builder.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__traits.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/global_position_target__type_support.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/waypoint_reached.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__struct.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__builder.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__traits.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/msg/detail/waypoint_reached__type_support.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/set_mode.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__struct.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__builder.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__traits.hpp
  /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/set_mode__type_support.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/command_bool.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__struct.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__builder.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__traits.hpp
- /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/command_bool__type_support.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/waypoint_set_current.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__struct.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__builder.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__traits.hpp
+ /opt/ros/humble/include/mavros_msgs/mavros_msgs/srv/detail/waypoint_set_current__type_support.hpp
  /opt/ros/humble/include/std_srvs/std_srvs/srv/trigger.hpp
  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__struct.hpp
  /opt/ros/humble/include/std_srvs/std_srvs/srv/detail/trigger__builder.hpp
